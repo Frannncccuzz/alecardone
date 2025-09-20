@@ -8,7 +8,7 @@ import Footer from "../components/DownSide/Footer";
 import { useI18n } from "../I18nProvider";
 
 //immagini
-import pizzaChefImg from "../assets/img/alessandro.jpeg";
+import pizzaChefImg from "../assets/img/alessandro.jpg";
 import pizzaFront from "../assets/img/Pizzaiolo.jpg";
 import pizzaAle from "../assets/img/pizzaAle.jpg";
 
