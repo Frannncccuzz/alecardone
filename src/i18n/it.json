@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "home": "HOME",
+    "menu": "MENU'",
+    "book": "PRENOTA"
+  },
+
+  "header": {
+    "title": "ciao mnamma",
+    "subHeader": "prova Animazione"
+  },
+
+  "alessandroSection": {
+    "firstTitle": "Il cgjcjyckjc",
+    "firstSubTitle": "Alessandro Cardone",
+    "firstDescription": "La mia storia inizia a 11 anni, davanti al forno di casa: all'inizio era un gioco di famiglia, poi è diventata passione. Dalle prime serate in pizzeria alle prove con impasti, maturazioni e temperature, sono arrivate le prime gare e i primi premi. Ho scelto di formarmi seriamente all'ALMA, approfondendo farine, lieviti e gestione del calore, fino al master da istruttore e a oltre 15 masterclass. Ho imparato che contano i dettagli: ingredienti, equilibrio, leggerezza. Oggi porto quel metodo nel lavoro quotidiano: ogni pizza nasce da quella scintilla accesa da bambino.",
+    "secondTitle": "Dal forno al mondo",
+    "secondSubTitle": "La mia esperienza internazionale",
+    "secondDescription": "Dopo un master da istruttore e oltre 15 masterclass, sono entrato nell’Accademia Pizzadoc come istruttore ufficiale. Ho avuto l’opportunità di lavorare con maestri internazionali e di portare la mia esperienza fino in Argentina e Brasile insieme al presidente Antonio Giaccoli. Ogni tappa mi ha arricchito e mi ha fatto crescere, e oggi continuo il mio percorso con la stessa energia di sempre: passione, curiosità e la voglia di trasmettere ciò che ho imparato.",
+    "thirdTitle": "I miei traguardi",
+    "thirdSubTitle": "Premi e riconoscimenti",
+    "thirdDescription": [
+      "1° posto – Campionato Pizza Classica, Napoli 2021",
+      "2° posto – Pizza Contemporanea, Roma 2020",
+      "Premio Speciale Innovazione – PizzAward, Milano 2019",
+      "Finalista – World Pizza Championship, Parma 2018",
+      "1° posto – Trofeo Pizza Napoletana STG, Salerno 2018",
+      "2° posto – Campionato Mondiale Pizza Senza Glutine, Parma 2017",
+      "Premio Miglior Impasto – Gara Regionale Pizza DOC, Avellino 2016",
+      "1° posto – Pizza Creativa, Roma 2016",
+      "3° posto – Campionato Italiano Pizzaioli, Milano 2015",
+      "Finalista – Pizza Talent Show, Verona 2015"
+    ]
+  },
+
+  "DownSide": {
+    "partner": "Le nostre aziende Partner",
+    "feedback": "Recensioni",
+    "buttonFeed": "Scrivi Una Recensione",
+    "book": "Vieni a Trovarci !",
+    "contact" : "contattaci",
+    "nome": "Nome",
+    "email": "Email",
+    "numero": "Numero Di Telefono",
+    "persone": "Persone"
+  },
+
+  "menu": [
+    {
+      "categoria": "Antipasti di Terra",
+      "piatti": [
+        { "nome": "Affettati misti con formaggi e gnocco fritto", "prezzo": 14.00, "allergeni": ["Glutine", "Latticini"], "img": "" },
+        { "nome": "Bufala campana con crudo", "prezzo": 13.00, "allergeni": ["Latticini"], "img": "" },
+        { "nome": "Vitello tonnato con capperi di Pantelleria", "prezzo": 13.00, "allergeni": ["Uova", "Pesce"], "img": "" },
+        { "nome": "Bresaola rucola e grana", "prezzo": 13.00, "allergeni": ["Latticini"], "img": "" }
+      ]
+    },
+    {
+      "categoria": "Antipasti di Mare",
+      "piatti": [
+        { "nome": "Antipasto misto di pesce", "prezzo": 19.00, "allergeni": ["Pesce", "Crostacei", "Molluschi"], "img": "" },
+        { "nome": "Polpo alla piastra con vellutata di patate", "prezzo": 18.00, "allergeni": ["Molluschi"], "img": "" },
+        { "nome": "Misto graten", "prezzo": 22.00, "allergeni": ["Pesce", "Crostacei", "Molluschi", "Glutine", "Latticini"], "img": "" },
+        { "nome": "Carpaccio di spada", "prezzo": 14.00, "allergeni": ["Pesce"], "img": "" }
+      ]
+    },
+    {
+      "categoria": "Primi di Pesce",
+      "piatti": [
+        { "nome": "Spaghetti con vongole e bottarga", "prezzo": 13.00, "allergeni": ["Glutine", "Pesce", "Molluschi"], "img": "" },
+        { "nome": "Scialatelli ai frutti di mare", "prezzo": 13.00, "allergeni": ["Glutine", "Pesce", "Crostacei", "Molluschi"], "img": "" },
+        { "nome": "Tortelli capasanta e scampi", "prezzo": 13.00, "allergeni": ["Glutine", "Pesce", "Crostacei", "Molluschi", "Latticini"], "img": "" }
+      ]
+    },
+    {
+      "categoria": "Primi di Terra",
+      "piatti": [
+        { "nome": "Le violette con speck e zola", "prezzo": 13.00, "allergeni": ["Glutine", "Latticini"], "img": "" },
+        { "nome": "Spaghetti di Gragnano alla carbonara con guanciale", "prezzo": 11.00, "allergeni": ["Glutine", "Uova", "Latticini"], "img": "" },
+        { "nome": "Spaghetti alla mediterranea", "prezzo": 10.00, "allergeni": ["Glutine"], "img": "" }
+      ]
+    },
+    {
+      "categoria": "Secondi di Mare",
+      "piatti": [
+        { "nome": "Frittura di calamari nostrani, gamberi e alici", "prezzo": 18.00, "allergeni": ["Glutine", "Pesce", "Crostacei", "Molluschi"], "img": "" },
+        { "nome": "Pesce spada alla griglia", "prezzo": 18.00, "allergeni": ["Pesce"], "img": "" },
+        { "nome": "Grigliata mista di pesce (gamberi, scampi, branzino)", "prezzo": 30.00, "allergeni": ["Pesce", "Crostacei", "Molluschi"], "img": "" },
+        { "nome": "Calamari arrostiti con crema di piselli", "prezzo": 18.00, "allergeni": ["Molluschi"], "img": "" }
+      ]
+    },
+    {
+      "categoria": "Secondi di Terra",
+      "piatti": [
+        { "nome": "Costata di Angus irlandese selezione Prime Quinn gr 550", "prezzo": 23.00, "img": "" },
+        { "nome": "Cotoletta alla milanese con patatine", "prezzo": 16.00, "allergeni": ["Glutine", "Uova"], "img": "" },
+        { "nome": "Tagliata rucola e grana", "prezzo": 23.00, "allergeni": ["Latticini"], "img": "" }
+      ]
+    },
+    {
+      "categoria": "Contorni",
+      "piatti": [
+        { "nome": "Verdure grigliate", "prezzo": 6.00, "img": "" },
+        { "nome": "Insalata", "prezzo": 5.00, "img": "" },
+        { "nome": "Patatine", "prezzo": 6.00, "img": "" }
+      ]
+    },
+{
+  "categoria": "Pizze Classiche",
+  "piatti": [
+    { "nome": "Marinara", "prezzo": 7.00, "descrizione": "Olio extra, Pomodoro San Marzano (Solania), aglio, origano, basilico.", "allergeni": [], "img": "" },
+    { "nome": "Capricciosa", "prezzo": 8.50, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), carciofi, funghi, prosciutto cotto, olive, salame.", "allergeni": ["Latticini", "Uova"], "img": "" },
+    { "nome": "4 stagioni", "prezzo": 8.50, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), carciofi, funghi, prosciutto cotto, olive extra.", "allergeni": ["Latticini", "Funghi"], "img": "" },
+    { "nome": "Napoletana", "prezzo": 8.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), acciughe, origano.", "allergeni": ["Pesce", "Latticini"], "img": "" },
+    { "nome": "Pizza al tonno", "prezzo": 8.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), tonno.", "allergeni": ["Pesce"], "img": "" },
+    { "nome": "Pluto", "prezzo": 8.50, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), würstel, patatine fritte.", "allergeni": ["Latticini", "Glutine"], "img": "" },
+    { "nome": "Mare Monti", "prezzo": 9.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), gamberetti, funghi porcini.", "allergeni": ["Pesce", "Funghi", "Latticini"], "img": "" },
+    { "nome": "Marianello", "prezzo": 8.50, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), salame piccante, olive, acciughe.", "allergeni": ["Pesce", "Latticini"], "img": "" },
+    { "nome": "Reginella", "prezzo": 10.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), pomodorini, mozzarella di bufala, in uscita rucola, prosciutto crudo, caciocavallo.", "allergeni": ["Latticini", "Glutine"], "img": "" },
+    { "nome": "Calamari", "prezzo": 13.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), calamari fritti.", "allergeni": ["Pesce", "Glutine", "Latticini"], "img": "" },
+    { "nome": "Zozza", "prezzo": 9.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), peperoni, cipolla, salame, zola.", "allergeni": ["Latticini", "Glutine"], "img": "" }
+  ]
+},
+{
+  "categoria": "Pizze Bianche",
+  "piatti": [
+    { "nome": "Tirolese", "prezzo": 10.00, "descrizione": "Panna, Fiordilatte (Sapori e Delizie), funghi porcini, speck.", "allergeni": ["Latticini", "Funghi"], "img": "" },
+    { "nome": "Friarielli e salsiccia", "prezzo": 9.00, "descrizione": "Fiordilatte (Sapori e Delizie), friarielli, salsiccia.", "allergeni": ["Latticini"], "img": "" },
+    { "nome": "Mortazza", "prezzo": 14.00, "descrizione": "Base bianca, pesto di pistacchio, mortadella, burrata di bufala, basilico, olio evo.", "allergeni": ["Latticini", "Frutta a guscio"], "img": "" },
+    { "nome": "Stracchinella", "prezzo": 8.50, "descrizione": "Fiordilatte (Sapori e Delizie), stracchinella, rucola in uscita.", "allergeni": ["Latticini", "Glutine"], "img": "" },
+    { "nome": "Contadina", "prezzo": 8.50, "descrizione": "Fiordilatte (Sapori e Delizie), zeta e fettine, zola.", "allergeni": ["Latticini", "Glutine"], "img": "" }
+  ]
+},
+{
+  "categoria": "Calzoni",
+  "piatti": [
+    { "nome": "Calzone classico", "prezzo": 8.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), prosciutto cotto.", "allergeni": ["Latticini", "Glutine"], "img": "" },
+    { "nome": "Calzone alla parmigiana", "prezzo": 9.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), melanzane, prosciutto cotto, parmigiano.", "allergeni": ["Latticini", "Glutine"], "img": "" },
+    { "nome": "Recco", "prezzo": 8.00, "descrizione": "Focaccia tirata a mano con ripieno di stracchino.", "allergeni": ["Latticini", "Glutine"], "img": "" },
+    { "nome": "Recco ai formaggi", "prezzo": 9.00, "descrizione": "Focaccia tirata a mano con ripieno di stracchino e formaggi misti.", "allergeni": ["Latticini", "Glutine"], "img": "" }
+  ]
+},
+{
+  "categoria": "Pizze Speciali",
+  "piatti": [
+    { "nome": "Olimpiadi della pizza", "prezzo": 14.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), pomodorini ciliegino, gamberetti, salmone affumicato, cozze, rucola, olio evo, limone.", "allergeni": ["Pesce", "Crostacei", "Latticini"], "img": "" },
+    { "nome": "Giro pizza Europa", "prezzo": 14.00, "descrizione": "Noci, Fiordilatte (Sapori e Delizie), lardo di colonnata, miele di castagno, parmigiano.", "allergeni": ["Latticini", "Frutta a guscio"], "img": "" },
+    { "nome": "Stracciatozza", "prezzo": 15.00, "descrizione": "Pomodoro San Marzano (Solania) crudo, stracciatella di bufala, basilico, olio evo.", "allergeni": ["Latticini"], "img": "" },
+    { "nome": "Mortazza", "prezzo": 15.00, "descrizione": "Base bianca, pesto di pistacchio, mortadella, burrata di bufala, basilico, olio evo.", "allergeni": ["Latticini", "Frutta a guscio"], "img": "" },
+    { "nome": "Marinara Futuristica", "prezzo": 18.00, "descrizione": "Pomodoro San Marzano (Solania), acciughe del Cantabrico, polvere di olive nere fermentate, polvere di cappero di Pantelleria, pomodorino ciliegino giallo, pesto di aglio orsino (Menù), origano del Montesaro, basilico cristallizzato.", "allergeni": ["Pesce", "Latticini", "Glutine"], "img": "", "dediche": "Pizza ideata da Francesco Martucci" },
+    { "nome": "Da Sud a Nord", "prezzo": 18.00, "descrizione": "Mozzarella, Fiordilatte (Sapori e Delizie), cipolle di Tropea, sottocenere, filetto di tonno (Calippo), polvere di olive nere fermentate, polvere di cappero di Pantelleria, cipolla di Breme caramellata (Slow Food), nduja di Spilinga, basilico cristallizzato non fritto.", "allergeni": ["Pesce", "Latticini", "Glutine"], "img": "", "dediche": "Pizza ideata dal maestro Vincenzo Fotia" },
+    { "nome": "La Mia Gricia", "prezzo": 16.00, "descrizione": "Crema di cacio e pepe (Menù), Fiordilatte (Sapori e Delizie), guanciale di Amatrice disidratato, pepe nero in uscita.", "allergeni": ["Latticini", "Glutine"], "img": "" },
+    { "nome": "Tartufo e Bufala", "prezzo": 15.00, "descrizione": "Base bianca, mozzarella di bufala, crema di tartufo, scaglie di parmigiano, olio evo.", "allergeni": ["Latticini"], "img": "" }
+  ]
+  
+},
+{
+  "categoria": "Margherite",
+  "piatti": [
+    { "nome": "Margherita classica", "prezzo": 7.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie).", "allergeni": ["Latticini", "Glutine"], "img": "../public/Pizzaimg.jpg" },
+    { "nome": "Margherita gialla", "prezzo": 8.00, "descrizione": "Pomodoro San Marzano (Solania) datterino giallo, Fiordilatte (Sapori e Delizie).", "allergeni": ["Latticini", "Glutine"], "img": "" },
+    { "nome": "Regina Margherita", "prezzo": 10.00, "descrizione": "Pomodoro San Marzano (Solania), pomodorini, mozzarella di bufala, Parmigiano Reggiano, basilico (tutto in cottura).", "allergeni": ["Latticini", "Glutine"], "img": "" },
+    { "nome": "Essenza di Margherita", "prezzo": 12.00, "descrizione": "Pomodoro San Marzano (Solania), Fiordilatte (Sapori e Delizie), stracciatella, basilico in doppia consistenza (fresco e fritto), polvere disidratata di Parmigiano Reggiano.", "allergeni": ["Latticini", "Glutine"], "img": "" }
+  ]
+},
+
+    {
+      "categoria": "Bevande",
+      "piatti": [
+        { "nome": "Acqua in vetro Panna-S. Pellegrino", "prezzo": 2.50, "img": "https://richiswaters.com/wp-content/uploads/acqua-s-pellegrino-immersive-collection-vetro-frizzante-75-cl.jpg" },
+        { "nome": "Lattine: Coca-Fanta-Sprite", "prezzo": 3.00, "img": "https://www.acquapanna.com/it/sites/g/files/xknfdk1036/files/styles/generic_image_style_fallback/public/2022-06/front-75-cl-glass-var-acqua-panna.jpg?itok=pH-gr5VU" },
+        { "nome": "Piccola bionda", "prezzo": 3.50, "allergeni": ["Glutine"], "img": "https://www.winelivery.com/_next/image?url=https%3A%2F%2Fcdn.winelivery.com%2Fpublic%2Fproducts%2Fimages%2F666ab833ba833269af6a58a0.jpeg&w=3840&q=75" },
+        { "nome": "Media bionda", "prezzo": 5.00, "allergeni": ["Glutine"], "img": "https://www.winelivery.com/_next/image?url=https%3A%2F%2Fcdn.winelivery.com%2Fpublic%2Fproducts%2Fimages%2F666ab833ba833269af6a58a0.jpeg&w=3840&q=75" },
+        { "nome": "Piccola Leffe", "prezzo": 4.00, "allergeni": ["Glutine"], "img": "https://www.roliobeer.it/images/rossa_depeo_gl01.jpg" },
+        { "nome": "Media Leffe", "prezzo": 5.50, "allergeni": ["Glutine"], "img": "https://www.roliobeer.it/images/rossa_depeo_gl01.jpg" },
+        { "nome": "Vino alla spina 1/2 Litro", "prezzo": 4.00, "img": "https://isaporidibau.it/wp-content/uploads/MG_4365-700x500-1.jpg" },
+        { "nome": "Vino alla spina 1 Litro", "prezzo": 8.00, "img": "https://isaporidibau.it/wp-content/uploads/MG_4365-700x500-1.jpg" },
+        { "nome": "Amari", "prezzo": 3.00, "allergeni": ["Solfiti"], "img": "https://www.oasibibite.it/foto_prod/alcolici-amari-grande.jpg" },
+        { "nome": "Caffè", "prezzo": 1.50, "img": "https://cdn.gvmnet.it/admingvm/media/immagininews/cuoreevasi/caffe-e-salute.jpg" },
+        { "nome": "Dolci", "prezzo": 6.00, "allergeni": ["Glutine", "Uova", "Latticini", "Frutta a guscio"], "img": "" }
+      ]
+    }
+  ]
+}
