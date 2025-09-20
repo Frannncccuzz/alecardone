@@ -8,12 +8,12 @@ import Footer from "../components/DownSide/Footer";
 import { useI18n } from "../I18nProvider";
 
 //immagini
-import pizzaChefImg from "../assets/Img/alessandro.jpeg";
-import pizzaFront from "../assets/Img/Pizzaiolo.jpg";
-import pizzaAle from "../assets/Img/pizzaAle.jpg";
+import pizzaChefImg from "../assets/img/alessandro.jpeg";
+import pizzaFront from "../assets/img/Pizzaiolo.jpg";
+import pizzaAle from "../assets/img/pizzaAle.jpg";
 
 const galleryModules = import.meta.glob(
-  "../assets/Img/Loghi/*.{jpg,jpeg,png,webp}",
+  "../assets/img/Loghi/*.{jpg,jpeg,png,webp}",
   { eager: true, as: "url" }
 );
 
