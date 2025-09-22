@@ -1,5 +1,5 @@
 
-import placeHolder from "../assets/Img/BookPage/rosadeiventi.png"
+import placeHolder from "../assets/img/rosadeiventi.png"
 export default function ShowDish({ piatto }) {
   const nome = piatto?.nome ?? "Senza titolo";
   const descrizione = piatto?.descrizione ?? "";

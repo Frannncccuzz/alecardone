@@ -1,4 +1,3 @@
-import Button from "../Button";
 import BlurText from "../BlurText";
 import SocialButton from "./SocialButton";
 import ContactForm from "../ContactForm";
@@ -16,13 +15,13 @@ export default function Footer({
     <section className="">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold sm:text-5xl text-[#E9D9B3] ">
+          <h2 className="text-3xl font-extrabold sm:text-8xl text-[#E9D9B3] ">
             <BlurText
               text={book}
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-2xl md:text-5xl mt-1 justify-center"
+              className="text-5xl md:text-7xl mt-1 justify-center"
             />
           </h2>
         </div>
@@ -52,7 +51,7 @@ export default function Footer({
         </div>
       </div>
       <footer>
-        <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-10">
+        <div className="mx-auto max-w-screen-xl p-4  pb-8 sm:px-6 lg:px-8 lg:pt-10">
           <div className="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24 dark:border-gray-800">
             <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
               <li>

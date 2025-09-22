@@ -43,65 +43,81 @@
   },
 
    "menu": [
+   {
+  "categoria": "Appetizers",
+  "tipologie": [
     {
-      "categoria": "Starters from the Land",
+      "nome": "Land Appetizers",
       "piatti": [
-        { "nome": "Affettati misti con formaggi e gnocco fritto", "prezzo": 14.00, "allergeni": ["Gluten", "Dairy"], "img": "" },
-        { "nome": "Bufala campana con crudo", "prezzo": 13.00, "allergeni": ["Dairy"], "img": "" },
-        { "nome": "Vitello tonnato con capperi di Pantelleria", "prezzo": 13.00, "allergeni": ["Eggs", "Fish"], "img": "" },
-        { "nome": "Bresaola rucola e grana", "prezzo": 13.00, "allergeni": ["Dairy"], "img": "" }
+        { "nome": "Mixed cold cuts with cheese and fried gnocco", "prezzo": 14.00, "allergeni": ["Gluten", "Dairy"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
+        { "nome": "Buffalo mozzarella with cured ham", "prezzo": 13.00, "allergeni": ["Dairy"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
+        { "nome": "Veal with tuna sauce and Pantelleria capers", "prezzo": 13.00, "allergeni": ["Eggs", "Fish"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
+        { "nome": "Bresaola with arugula and parmesan", "prezzo": 13.00, "allergeni": ["Dairy"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" }
       ]
     },
     {
-      "categoria": "Seafood Starters",
+      "nome": "Sea Appetizers",
       "piatti": [
-        { "nome": "Antipasto misto di pesce", "prezzo": 19.00, "allergeni": ["Fish", "Crustaceans", "Mollusks"], "img": "" },
-        { "nome": "Polpo alla piastra con vellutata di patate", "prezzo": 18.00, "allergeni": ["Mollusks"], "img": "" },
-        { "nome": "Misto graten", "prezzo": 22.00, "allergeni": ["Fish", "Crustaceans", "Mollusks", "Gluten", "Dairy"], "img": "" },
-        { "nome": "Carpaccio di spada", "prezzo": 14.00, "allergeni": ["Fish"], "img": "" }
+        { "nome": "Mixed seafood appetizer", "prezzo": 19.00, "allergeni": ["Fish", "Crustaceans", "Mollusks"], "img": "" },
+        { "nome": "Grilled octopus with potato velouté", "prezzo": 18.00, "allergeni": ["Mollusks"], "img": "" },
+        { "nome": "Mixed seafood gratin", "prezzo": 22.00, "allergeni": ["Fish", "Crustaceans", "Mollusks", "Gluten", "Dairy"], "img": "" },
+        { "nome": "Swordfish carpaccio", "prezzo": 14.00, "allergeni": ["Fish"], "img": "" }
+      ]
+    }
+  ]
+},
+{
+  "categoria": "First Courses",
+  "tipologie": [
+    {
+      "nome": "Sea First Courses",
+      "piatti": [
+        { "nome": "Spaghetti with clams and bottarga", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Mollusks"], "img": "" },
+        { "nome": "Scialatielli with seafood", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks"], "img": "" },
+        { "nome": "Tortelli with scallops and prawns", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks", "Dairy"], "img": "" }
       ]
     },
     {
-      "categoria": "Seafood Pasta",
+      "nome": "Land First Courses",
       "piatti": [
-        { "nome": "Spaghetti con vongole e bottarga", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Mollusks"], "img": "" },
-        { "nome": "Scialatelli ai frutti di mare", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks"], "img": "" },
-        { "nome": "Tortelli capasanta e scampi", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks", "Dairy"], "img": "" }
+        { "nome": "Violette pasta with speck and gorgonzola", "prezzo": 13.00, "allergeni": ["Gluten", "Dairy"], "img": "" },
+        { "nome": "Gragnano spaghetti carbonara with guanciale", "prezzo": 11.00, "allergeni": ["Gluten", "Eggs", "Dairy"], "img": "" },
+        { "nome": "Mediterranean spaghetti", "prezzo": 10.00, "allergeni": ["Gluten"], "img": "" }
+      ]
+    }
+  ]
+},
+{
+  "categoria": "Main Courses",
+  "tipologie": [
+    {
+      "nome": "Sea Main Courses",
+      "piatti": [
+        { "nome": "Fried calamari, prawns and anchovies", "prezzo": 18.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks"], "img": "" },
+        { "nome": "Grilled swordfish", "prezzo": 18.00, "allergeni": ["Fish"], "img": "" },
+        { "nome": "Mixed grilled fish (prawns, scampi, sea bass)", "prezzo": 30.00, "allergeni": ["Fish", "Crustaceans", "Mollusks"], "img": "" },
+        { "nome": "Grilled calamari with pea cream", "prezzo": 18.00, "allergeni": ["Mollusks"], "img": "" }
       ]
     },
     {
-      "categoria": "Land Pasta",
+      "nome": "Land Main Courses",
       "piatti": [
-        { "nome": "Le violette con speck e zola", "prezzo": 13.00, "allergeni": ["Gluten", "Dairy"], "img": "" },
-        { "nome": "Spaghetti di Gragnano alla carbonara con guanciale", "prezzo": 11.00, "allergeni": ["Gluten", "Eggs", "Dairy"], "img": "" },
-        { "nome": "Spaghetti alla mediterranea", "prezzo": 10.00, "allergeni": ["Gluten"], "img": "" }
+        { "nome": "Prime Quinn Irish Angus rib steak 550g", "prezzo": 23.00, "img": "" },
+        { "nome": "Milanese cutlet with fries", "prezzo": 16.00, "allergeni": ["Gluten", "Eggs"], "img": "" },
+        { "nome": "Sliced beef with arugula and parmesan", "prezzo": 23.00, "allergeni": ["Dairy"], "img": "" }
       ]
     },
     {
-      "categoria": "Seafood Mains",
+      "nome": "Side Dishes",
       "piatti": [
-        { "nome": "Frittura di calamari nostrani, gamberi e alici", "prezzo": 18.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks"], "img": "" },
-        { "nome": "Pesce spada alla griglia", "prezzo": 18.00, "allergeni": ["Fish"], "img": "" },
-        { "nome": "Grigliata mista di pesce (gamberi, scampi, branzino)", "prezzo": 30.00, "allergeni": ["Fish", "Crustaceans", "Mollusks"], "img": "" },
-        { "nome": "Calamari arrostiti con crema di piselli", "prezzo": 18.00, "allergeni": ["Mollusks"], "img": "" }
+        { "nome": "Grilled vegetables", "prezzo": 6.00, "img": "" },
+        { "nome": "Salad", "prezzo": 5.00, "img": "" },
+        { "nome": "French fries", "prezzo": 6.00, "img": "" }
       ]
-    },
-    {
-      "categoria": "Land Mains",
-      "piatti": [
-        { "nome": "Costata di Angus irlandese selezione Prime Quinn gr 550", "prezzo": 23.00, "img": "" },
-        { "nome": "Cotoletta alla milanese con patatine", "prezzo": 16.00, "allergeni": ["Gluten", "Eggs"], "img": "" },
-        { "nome": "Tagliata rucola e grana", "prezzo": 23.00, "allergeni": ["Dairy"], "img": "" }
-      ]
-    },
-    {
-      "categoria": "Sides",
-      "piatti": [
-        { "nome": "Verdure grigliate", "prezzo": 6.00, "img": "" },
-        { "nome": "Insalata", "prezzo": 5.00, "img": "" },
-        { "nome": "Patatine", "prezzo": 6.00, "img": "" }
-      ]
-    },
+    }
+  ]
+},
+
     {
   "categoria": "Pizzas",
   "piatti": [

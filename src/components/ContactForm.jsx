@@ -68,14 +68,6 @@ Vorrei prenotare un tavolo${formattedDate ? `per ${formattedDate}` : ""} per ${
       />
       <div className="flex flex-wrap gap-3">
         <input
-          type="tel"
-          name={telefono}
-          placeholder="Numero di telefono"
-          value={form.telefono}
-          onChange={handleChange}
-          className="flex-1 min-w-[150px] rounded-xl border border-gray-300 p-3 bg-white text-gray-900"
-        />
-        <input
           type="date"
           name="data"
           value={form.data}

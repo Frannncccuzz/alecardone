@@ -75,19 +75,6 @@ export default function Home() {
           button={t("DownSide.buttonFeed")}
         />
       </section>
-      <section id="book">
-        <Footer
-          facebook={
-            "https://www.facebook.com/share/15zqgyX4eF/?mibextid=wwXIfr"
-          }
-          insta={"https://www.instagram.com/_alessandrocardone_pizza_maker/"}
-          book={t("DownSide.book")}
-          nome={t("DownSide.nome")}
-          email={t("DownSide.email")}
-          telefono={t("DownSide.telefono")}
-          persone={t("DownSide.persone")}
-        />
-      </section>
     </main>
   );
 }
