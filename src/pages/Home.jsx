@@ -4,16 +4,15 @@ import Header from "../components/Header/Header";
 import PizzaChef from "../components/Header/PizzaChef";
 import DomeGallery from "../components/Header/DomeGallery";
 import Review from "../components/DownSide/Review";
-import Footer from "../components/DownSide/Footer";
 import { useI18n } from "../I18nProvider";
 
 //immagini
 import pizzaChefImg from "../assets/img/alessandro.jpg";
 import pizzaFront from "../assets/img/Pizzaiolo.jpg";
-import pizzaAle from "../assets/img/pizzaAle.jpg";
+import pizzaAle from "../assets/img/pizzaale.jpg";
 
 const galleryModules = import.meta.glob(
-  "../assets/img/Loghi/*.{jpg,jpeg,png,webp}",
+  "../assets/img/loghi/*.{jpg,jpeg,png,webp}",
   { eager: true, as: "url" }
 );
 
