@@ -1,6 +1,5 @@
 import { useMemo, useState, useEffect, useCallback } from "react";
 import { useI18n } from "../I18nProvider";
-import pizza from "../assets/img/pizzaale.jpg";
 import { useNavigate } from "react-router-dom";
 
 
@@ -36,7 +35,7 @@ export default function Menu() {
             onClick={() => handleClickCategory(cat.categoria)}
             className="relative flex justify-center items-end w-80 h-50 rounded-3xl md:w-90 md:h-60 xl:w-120 xl:h-80 overflow-hidden"
             style={{
-              backgroundImage: `url(${pizza})`,
+              backgroundImage: "url(/pizzaale.jpg)",
               backgroundSize: "cover",
             }}
           >
