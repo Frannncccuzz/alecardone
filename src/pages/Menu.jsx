@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect, useCallback } from "react";
 import { useI18n } from "../I18nProvider";
-import pizza from "../assets/img/pizzaAle.jpg"
+import pizza from "../assets/img/pizzaale.jpg"
 
 
 
