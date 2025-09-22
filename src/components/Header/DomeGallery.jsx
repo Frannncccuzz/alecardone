@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useCallback } from "react";
 import { useGesture } from "@use-gesture/react";
-import { galleryImages } from "../../assets/gallery/manifest";
+import { galleryImages } from "../../assets/gallery/manifest.js";
 
 
 

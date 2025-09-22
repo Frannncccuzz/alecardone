@@ -5,7 +5,7 @@ import PizzaChef from "../components/Header/PizzaChef";
 import DomeGallery from "../components/Header/DomeGallery";
 import Review from "../components/DownSide/Review";
 import { useI18n } from "../I18nProvider";
-import { galleryImages } from "../assets/img/loghi/manifest";
+import { galleryImages } from "../assets/img/loghi/manifest.js";
 
 
 
