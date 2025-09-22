@@ -1,6 +1,7 @@
 [build]
   command = "npm ci && npm run build"
   publish = "dist"
+  git.ref = "refs/heads/main"
 
 [build.environment]
    NODE_VERSION = "20.19.0"
