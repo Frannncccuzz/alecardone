@@ -45,7 +45,6 @@ export default function Footer({
               nome={nome}
               email={email}
               telefono={telefono}
-              persone = {persone}
             />
           </div>
         </div>

@@ -24,6 +24,7 @@
     "i18n": "^0.15.1",
     "motion": "^12.23.15",
     "react": "^19.1.1",
+    "react-country-flag": "^3.1.0",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.1",
     "react-router-hash-link": "^2.4.3"
