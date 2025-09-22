@@ -21,6 +21,8 @@ const galleryImages = Object.entries(galleryModules)
 
   
 
+console.log("galleryModules:", galleryModules);
+
 
 
 const DEFAULTS = {

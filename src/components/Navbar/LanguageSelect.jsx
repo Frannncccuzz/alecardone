@@ -1,4 +1,20 @@
 import { useI18n } from "../../I18nProvider";
+// import {US, IN, FR, JP, AU, BR} from "country-flag-icons/react/3x2"
+
+
+// const flags = [
+//   { Component: "US", title: "United States" },
+//   { Component: "IN", title: "United States" },
+//   { Component: "FR", title: "United States" },
+//   { Component: "JP", title: "United States" },
+//   { Component: "AU", title: "United States" },
+//   { Component: "BR", title: "Brazil" },
+// ];
+
+
+
+
+
 
 export default function LanguageSelect() {
   const { lang, setLang } = useI18n();
@@ -18,16 +34,10 @@ export default function LanguageSelect() {
       aria-label="Seleziona lingua"
     >
       <option value="it">IT</option>
-      <option value="en">EN</option>
-      <option value="fr">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2">
-          <rect fill="#CE1126" width="3" height="2" />
-          <rect fill="#fff" width="2" height="2" />
-          <rect fill="#002654" width="1" height="2" />
-        </svg>
-      </option>
-      <option value="de">DE</option>
-      <option value="es">ES</option>
+      <option value="en">🇬🇧</option>
+      <option value="fr">🇫🇷</option>
+      <option value="de">🇩🇪</option>
+      <option value="es">🇪🇸</option>
     </select>
   );
 }

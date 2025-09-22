@@ -14,7 +14,7 @@ const galleryModules = import.meta.glob(
 const galleryImages = Object.entries(galleryModules)
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([path, url]) => {
-    const fileName = path.replace(/\\/g, "/").split("/").pop(); 
+    const fileName = path.replace(/\\/g, "/").split("/").pop(); // safe cross-platform
     return {
       src: url,
       alt: fileName
@@ -24,8 +24,8 @@ const galleryImages = Object.entries(galleryModules)
   });
 
 
-
 console.log("galleryModules:", galleryModules);
+
 
 export default function Home() {
 
