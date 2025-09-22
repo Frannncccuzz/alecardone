@@ -1,27 +1,6 @@
 import { useEffect, useMemo, useRef, useCallback } from "react";
 import { useGesture } from "@use-gesture/react";
-
-
-const galleryModules = import.meta.glob(
-  "/src/assets/gallery/*.{jpg,jpeg,png,webp}",
-  { eager: true, as: "url" }
-);
-
-const galleryImages = Object.entries(galleryModules)
-  .sort(([a], [b]) => a.localeCompare(b))
-  .map(([path, url]) => {
-    const fileName = path.replace(/\\/g, "/").split("/").pop(); // safe cross-platform
-    return {
-      src: url,
-      alt: fileName
-        ? fileName.replace(/\.[^.]+$/, "").replace(/[-_]/g, " ")
-        : "image",
-    };
-  });
-
-  
-
-console.log("galleryModules:", galleryModules);
+import { galleryImages } from "../../assets/gallery/manifest";
 
 
 

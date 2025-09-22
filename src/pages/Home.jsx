@@ -5,26 +5,12 @@ import PizzaChef from "../components/Header/PizzaChef";
 import DomeGallery from "../components/Header/DomeGallery";
 import Review from "../components/DownSide/Review";
 import { useI18n } from "../I18nProvider";
-
-const galleryModules = import.meta.glob(
-  "/src/assets/img/loghi/*.{jpg,jpeg,png,webp}",
-  { eager: true, as: "url" }
-);
-
-const galleryImages = Object.entries(galleryModules)
-  .sort(([a], [b]) => a.localeCompare(b))
-  .map(([path, url]) => {
-    const fileName = path.replace(/\\/g, "/").split("/").pop(); // safe cross-platform
-    return {
-      src: url,
-      alt: fileName
-        ? fileName.replace(/\.[^.]+$/, "").replace(/[-_]/g, " ")
-        : "image",
-    };
-  });
+import { galleryImages } from "../assets/img/loghi/manifest";
 
 
-console.log("galleryModules:", galleryModules);
+
+
+console.log("galleryModules:", galleryImages);
 
 
 export default function Home() {
