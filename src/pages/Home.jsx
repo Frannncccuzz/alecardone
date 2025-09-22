@@ -7,14 +7,14 @@ import Review from "../components/DownSide/Review";
 import { useI18n } from "../I18nProvider";
 
 const galleryModules = import.meta.glob(
-  "../assets/img/loghi/*.{jpg,jpeg,png,webp}",
+  "/src/assets/img/loghi/*.{jpg,jpeg,png,webp}",
   { eager: true, as: "url" }
 );
 
 const galleryImages = Object.entries(galleryModules)
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([path, url]) => {
-    const fileName = path.replace(/\\/g, "/").split("/").pop(); // safe cross-platform
+    const fileName = path.replace(/\\/g, "/").split("/").pop(); 
     return {
       src: url,
       alt: fileName

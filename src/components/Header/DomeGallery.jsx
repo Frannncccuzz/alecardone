@@ -3,7 +3,7 @@ import { useGesture } from "@use-gesture/react";
 
 
 const galleryModules = import.meta.glob(
-  "../../assets/gallery/*.{jpg,jpeg,png,webp}",
+  "/src/assets/gallery/*.{jpg,jpeg,png,webp}",
   { eager: true, as: "url" }
 );
 

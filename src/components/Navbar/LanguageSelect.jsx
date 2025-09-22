@@ -19,7 +19,13 @@ export default function LanguageSelect() {
     >
       <option value="it">IT</option>
       <option value="en">EN</option>
-      <option value="fr">FR</option>
+      <option value="fr">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2">
+          <rect fill="#CE1126" width="3" height="2" />
+          <rect fill="#fff" width="2" height="2" />
+          <rect fill="#002654" width="1" height="2" />
+        </svg>
+      </option>
       <option value="de">DE</option>
       <option value="es">ES</option>
     </select>
