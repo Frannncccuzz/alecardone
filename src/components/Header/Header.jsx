@@ -8,7 +8,7 @@ export default function Header() {
     <header className="relative h-screen overflow-hidden">
       <div
         className="absolute blur-md inset-0 z-3 bg-cover md:bg-center brightness-60"
-        style={{ backgroundImage: `url(${homeImg})` }}
+        style={{ backgroundImage: `url("/img/Pizzaimg.jpg")` }}
       />
       <div className="absolute inset-0 bg-black/40" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1B1B1B]/20 to-[#1B1B1B]" />

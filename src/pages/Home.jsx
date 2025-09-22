@@ -32,27 +32,29 @@ export default function Home() {
 
   const { t } = useI18n();
   return (
-    <main className="relative w-full min-h-screen text-white
-                 bg-[#1B1B1B]">
+    <main
+      className="relative w-full min-h-screen text-white
+                 bg-[#1B1B1B]"
+    >
       <Header></Header>
       <PizzaChef
         title={t("alessandroSection.firstTitle")}
         descriptionTitle={t("alessandroSection.firstSubTitle")}
-        img={pizzaChefImg}
+        img={"/img/alessandro.jpg"}
         align="sx"
         description={t("alessandroSection.firstDescription")}
       />
       <PizzaChef
         title={t("alessandroSection.secondTitle")}
         descriptionTitle={t("alessandroSection.secondSubTitle")}
-        img={pizzaAle}
+        img={"/img/pizzaale.jpg"}
         align="dx"
         description={t("alessandroSection.secondDescription")}
       />
       <PizzaChef
         title={t("alessandroSection.thirdTitle")}
         descriptionTitle={t("alessandroSection.thirdSubTitle")}
-        img={pizzaFront}
+        img={"/img/Pizzaiolo.jpg"}
         align="sx"
         premi={t("alessandroSection.thirdDescription")}
       />
