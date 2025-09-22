@@ -9,7 +9,7 @@ import { useI18n } from "../I18nProvider";
 //immagini
 import pizzaChefImg from "../assets/img/alessandro.jpg";
 import pizzaFront from "../assets/img/Pizzaiolo.jpg";
-import pizzaAle from "../assets/img/pizzaale.jpg";
+import pizzaAle from "../assets/img/pizzale.jpg";
 
 const galleryModules = import.meta.glob(
   "../assets/img/loghi/*.{jpg,jpeg,png,webp}",

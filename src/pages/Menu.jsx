@@ -1,13 +1,8 @@
 import { useMemo, useState, useEffect, useCallback } from "react";
 import { useI18n } from "../I18nProvider";
-import pizza from "../assets/img/pizzaale.jpg"
-
-
-
-import Footer from "../components/DownSide/Footer";
-import ShowDish from "../components/ShowDish";
+import pizza from "../assets/img/pizzaale.jpg";
 import { useNavigate } from "react-router-dom";
-import NavBar from "../components/Navbar/NavBar";
+
 
 const slugify = (str) =>
   str
