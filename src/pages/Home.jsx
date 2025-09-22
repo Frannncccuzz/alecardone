@@ -22,6 +22,8 @@ const galleryImages = Object.entries(galleryModules)
         : "image",
     };
   });
+  
+console.log("galleryModules:", galleryModules);
 
 export default function Home() {
 
