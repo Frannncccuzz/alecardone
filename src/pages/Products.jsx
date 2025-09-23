@@ -100,7 +100,7 @@ export default function Products() {
                 <div className="flex justify-between">
                   <h3 className="font-semibold">{p.nome}</h3>
                   {typeof p.prezzo === "number" && (
-                    <span className="font-medium">{p.prezzo.toFixed(2)} €</span>
+                    <span className="font-medium  text-md">{p.prezzo.toFixed(2)}€</span>
                   )}
                 </div>
 

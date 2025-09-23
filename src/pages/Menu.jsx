@@ -3,6 +3,7 @@ import { useI18n } from "../I18nProvider";
 import { useNavigate } from "react-router-dom";
 import LanguageSelect from "../components/Navbar/LanguageSelect";
 
+
 function slugify(text) {
   if (!text || typeof text !== "string") return "";
   return text
@@ -12,6 +13,11 @@ function slugify(text) {
 }
 
 export default function Menu() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const navigate = useNavigate();
   const { t } = useI18n();
 

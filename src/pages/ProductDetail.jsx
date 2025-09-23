@@ -2,6 +2,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useI18n } from "../I18nProvider";
 import { useMemo } from "react";
+import { useEffect } from "react";
 
 const slugify = (str) =>
   str
@@ -12,6 +13,9 @@ const slugify = (str) =>
     .replace(/(^-|-$)/g, "");
 
 export default function ProductDetail() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { category, productId } = useParams();
   const { t } = useI18n();
   const navigate = useNavigate();
@@ -49,7 +53,6 @@ export default function ProductDetail() {
   return (
     <section className=" px-6 py-23 min-h-screen flex flex-col items-center">
       <div className="w-full max-w-6xl grid md:grid-cols-2 gap-10 items-center">
-        {/* Immagine */}
         <div className="flex justify-center">
           <img
             src={product.img}
@@ -57,8 +60,6 @@ export default function ProductDetail() {
             className="rounded-2xl shadow-lg w-full max-w-md object-cover"
           />
         </div>
-
-        {/* Dettagli */}
         <div>
           <h1 className="text-3xl md:text-4xl font-bold uppercase mb-4">
             {product.nome}
@@ -80,7 +81,7 @@ export default function ProductDetail() {
           )}
 
           {typeof product.prezzo === "number" && (
-            <p className="text-3xl font-bold">{product.prezzo.toFixed(2)} €</p>
+            <p className="text-2xl font-semibold">{product.prezzo.toFixed(2)}€</p>
           )}
         </div>
       </div>

@@ -8,10 +8,15 @@ import { useI18n } from "../I18nProvider";
 import { galleryImages } from "../assets/img/loghi/manifest.js";
 import Footer from "../components/DownSide/Footer.jsx";
 import LanguageSelect from "../components/Navbar/LanguageSelect.jsx";
+import { useEffect } from "react";
 
 
 export default function Home() {
   const { t } = useI18n();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main

@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 
+
 import { useI18n } from "../I18nProvider";
 
 export default function Layout() {

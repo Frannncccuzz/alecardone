@@ -28,7 +28,7 @@ export default function Footer({
       </div>
       <div className="mx-auto max-w-screen-xl px-4 pt-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg">
+          <div className="w-full h-64 md:h-110 rounded-2xl overflow-hidden shadow-lg">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.134720394025!2d8.72921847694962!3d45.08704105935205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47874104d2d3f6df%3A0x545c2a05361f807e!2sViale%20Unione%20Sovietica%2C%2057%2C%2027035%20Mede%20PV!5e0!3m2!1sit!2sit!4v1694966745623!5m2!1sit!2sit"
               className="w-full h-full border-0"
