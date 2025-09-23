@@ -15,7 +15,9 @@ export default function Element({ children, destination, dimension }) {
         <a
           href={destination}
           onClick={handleClick}
-          className={`inline-block ${dimension ?? ""} transition-transform 
+          className={`inline-block ${
+            dimension ? dimension : "text-lg"
+          } texttransition-transform 
           duration-200 transform hover:scale-110 hover:text-red-800`}
         >
           {children}
@@ -23,7 +25,8 @@ export default function Element({ children, destination, dimension }) {
       ) : (
         <Link
           to={destination}
-          className={`inline-block ${dimension ?? ""} transition-transform 
+          className={`inline-block ${
+            dimension ? dimension : "text-lg"} transition-transform 
           duration-200 transform hover:scale-110 hover:text-red-800`}
         >
           {children}
@@ -32,3 +35,6 @@ export default function Element({ children, destination, dimension }) {
     </li>
   );
 }
+
+
+

@@ -6,32 +6,27 @@
   },
 
   "header": {
-    "title": "ciao mnamma",
-    "subHeader": "prova Animazione",
-    "menu": "Il Nostro Menù"
+    "title": "Ristorante Pizzeria Rosa dei Venti",
+    "subHeader": "Dove ogni pizza è un viaggio",
+    "menu": "Scopri il nostro menù"
   },
 
   "alessandroSection": {
-    "firstTitle": "Il cgjcjyckjc",
+    "firstTitle": "Il Nostro Maestro",
     "firstSubTitle": "Alessandro Cardone",
-    "firstDescription": "La mia storia inizia a 11 anni, davanti al forno di casa: all'inizio era un gioco di famiglia, poi è diventata passione. Dalle prime serate in pizzeria alle prove con impasti, maturazioni e temperature, sono arrivate le prime gare e i primi premi. Ho scelto di formarmi seriamente all'ALMA, approfondendo farine, lieviti e gestione del calore, fino al master da istruttore e a oltre 15 masterclass. Ho imparato che contano i dettagli: ingredienti, equilibrio, leggerezza. Oggi porto quel metodo nel lavoro quotidiano: ogni pizza nasce da quella scintilla accesa da bambino.",
+    "firstDescription": "Ho acceso il primo forno a 11 anni, per gioco. Da lì è nata una passione che mi ha portato all’ALMA, alle gare e alla formazione continua. Oggi in ogni pizza cerco la stessa scintilla di allora: ingredienti scelti, equilibrio e leggerezza.",
     "secondTitle": "Dal forno al mondo",
     "secondSubTitle": "La mia esperienza internazionale",
-    "secondDescription": "Dopo un master da istruttore e oltre 15 masterclass, sono entrato nell’Accademia Pizzadoc come istruttore ufficiale. Ho avuto l’opportunità di lavorare con maestri internazionali e di portare la mia esperienza fino in Argentina e Brasile insieme al presidente Antonio Giaccoli. Ogni tappa mi ha arricchito e mi ha fatto crescere, e oggi continuo il mio percorso con la stessa energia di sempre: passione, curiosità e la voglia di trasmettere ciò che ho imparato.",
+    "secondDescription": "Dopo un master e 15 masterclass sono diventato istruttore ufficiale Pizzadoc, portando la mia esperienza fino in Argentina e Brasile. Oggi continuo con la stessa energia: passione, curiosità e voglia di condividere.",
     "thirdTitle": "I miei traguardi",
-    "thirdSubTitle": "Premi e riconoscimenti",
+    "thirdSubTitle": "Tra i successi più recenti:",
     "thirdDescription": [
-      "1° posto – Campionato Pizza Classica, Napoli 2021",
-      "2° posto – Pizza Contemporanea, Roma 2020",
-      "Premio Speciale Innovazione – PizzAward, Milano 2019",
-      "Finalista – World Pizza Championship, Parma 2018",
-      "1° posto – Trofeo Pizza Napoletana STG, Salerno 2018",
-      "2° posto – Campionato Mondiale Pizza Senza Glutine, Parma 2017",
-      "Premio Miglior Impasto – Gara Regionale Pizza DOC, Avellino 2016",
-      "1° posto – Pizza Creativa, Roma 2016",
-      "3° posto – Campionato Italiano Pizzaioli, Milano 2015",
-      "Finalista – Pizza Talent Show, Verona 2015"
-    ]
+  "🥇 Campionato Pizza Classica, Napoli 2021",
+  "🥈 Pizza Contemporanea, Roma 2020",
+  "🏆 Premio Innovazione – PizzAward, Milano 2019",
+  "🥇 Trofeo Pizza Napoletana STG, Salerno 2018",
+  "🌍 Finalista – World Pizza Championship, Parma 2018"
+]
   },
 
   "DownSide": {

@@ -1,6 +1,8 @@
-import { useEffect, useMemo, useRef, useCallback, useState } from "react";
+import { useEffect, useMemo, useRef, useCallback } from "react";
 import { useGesture } from "@use-gesture/react";
 import { galleryImages } from "../../assets/gallery/manifest.js";
+
+
 
 const DEFAULTS = {
   maxVerticalRotationDeg: 5,
@@ -8,10 +10,6 @@ const DEFAULTS = {
   enlargeTransitionMs: 300,
   segments: 35,
 };
-
-// Piccolo placeholder trasparente per evitare “buchi” mentre la vera src non è ancora assegnata
-const PLACEHOLDER_1x1 =
-  "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
 const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
 const normalizeAngle = (d) => ((d % 360) + 360) % 360;
@@ -24,35 +22,6 @@ const getDataNumber = (el, name, fallback) => {
   const n = attr == null ? NaN : parseFloat(attr);
   return Number.isFinite(n) ? n : fallback;
 };
-
-// Hook: rivela le immagini .dg-lazy impostando src/data-src quando entrano in vista
-function useRevealImages() {
-  const ioRef = useRef(null);
-  useEffect(() => {
-    const els = Array.from(document.querySelectorAll(".dg-lazy[data-src]"));
-    if (!("IntersectionObserver" in window) || els.length === 0) return;
-
-    ioRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting || entry.intersectionRatio > 0) {
-            const img = entry.target;
-            const real = img.getAttribute("data-src");
-            if (real && img.src !== real) {
-              img.src = real;
-            }
-            img.classList.remove("dg-lazy");
-            ioRef.current.unobserve(img);
-          }
-        });
-      },
-      { rootMargin: "200px" } // pre-carica poco prima
-    );
-
-    els.forEach((el) => ioRef.current.observe(el));
-    return () => ioRef.current?.disconnect();
-  }, []);
-}
 
 function buildItems(pool, seg) {
   const xCols = Array.from({ length: seg }, (_, i) => -37 + i * 2);
@@ -77,10 +46,7 @@ function buildItems(pool, seg) {
   const normalizedImages = pool.map((image) =>
     typeof image === "string"
       ? { src: image, alt: "" }
-      : {
-          src: image.src || image.thumb || image.full || "",
-          alt: image.alt || "",
-        }
+      : { src: image.src || "", alt: image.alt || "" }
   );
 
   const usedImages = Array.from(
@@ -88,6 +54,7 @@ function buildItems(pool, seg) {
     (_, i) => normalizedImages[i % normalizedImages.length]
   );
 
+  // Evita duplicati adiacenti
   for (let i = 1; i < usedImages.length; i++) {
     if (usedImages[i].src === usedImages[i - 1].src) {
       for (let j = i + 1; j < usedImages.length; j++) {
@@ -122,9 +89,9 @@ export default function DomeGallery({
   minRadius = 600,
   maxRadius = Infinity,
   padFactor = 0.25,
-  overlayBlurColor = "#3E2C26",
-  topGradientColor = "#1B1B1B", 
-  bottomGradientColor = "#1B1B1B", 
+  overlayBlurColor = "#3E2C26", // marrone cacao
+  topGradientColor = "#1B1B1B", // nero grafite
+  bottomGradientColor = "#1B1B1B", // nero grafite
   maxVerticalRotationDeg = DEFAULTS.maxVerticalRotationDeg,
   dragSensitivity = DEFAULTS.dragSensitivity,
   enlargeTransitionMs = DEFAULTS.enlargeTransitionMs,
@@ -134,7 +101,7 @@ export default function DomeGallery({
   openedImageHeight = "600px",
   imageBorderRadius = "20px",
   openedImageBorderRadius = "20px",
-  grayscale = false,
+  grayscale = false, 
 }) {
   const rootRef = useRef(null);
   const mainRef = useRef(null);
@@ -158,22 +125,6 @@ export default function DomeGallery({
   const openStartedAtRef = useRef(0);
   const lastDragEndAt = useRef(0);
 
-  // 👇 Segments adattivi: meno tasselli su schermi stretti (meno richieste/immagini)
-  const [effSegments, setEffSegments] = useState(segments);
-  useEffect(() => {
-    const update = () => {
-      const narrow =
-        typeof window !== "undefined" &&
-        window.matchMedia("(max-width: 640px)").matches;
-      setEffSegments(
-        narrow ? Math.max(20, Math.round(segments * 0.6)) : segments
-      );
-    };
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, [segments]);
-
   const scrollLockedRef = useRef(false);
   const lockScroll = useCallback(() => {
     if (scrollLockedRef.current) return;
@@ -187,12 +138,7 @@ export default function DomeGallery({
     document.body.classList.remove("dg-scroll-lock");
   }, []);
 
-  useRevealImages();
-
-  const items = useMemo(
-    () => buildItems(images, effSegments),
-    [images, effSegments]
-  );
+  const items = useMemo(() => buildItems(images, segments), [images, segments]);
 
   const applyTransform = (xDeg, yDeg) => {
     const el = sphereRef.current;
@@ -615,7 +561,7 @@ export default function DomeGallery({
       offsetY,
       sizeX,
       sizeY,
-      effSegments
+      segments
     );
     const parentY = normalizeAngle(parentRot.rotateY);
     const globalY = normalizeAngle(rotationRef.current.y);
@@ -661,11 +607,7 @@ export default function DomeGallery({
     overlay.style.overflow = "hidden";
     overlay.style.boxShadow = "0 10px 30px rgba(0,0,0,.35)";
 
-    const rawSrc =
-      parent.dataset.src ||
-      el.querySelector("img")?.getAttribute("data-src") ||
-      el.querySelector("img")?.src ||
-      "";
+    const rawSrc = parent.dataset.src || el.querySelector("img")?.src || "";
     const rawAlt = parent.dataset.alt || el.querySelector("img")?.alt || "";
     const img = document.createElement("img");
     img.src = rawSrc;
@@ -772,10 +714,6 @@ export default function DomeGallery({
       transition: transform 300ms; pointer-events: auto; -webkit-transform: translateZ(0); transform: translateZ(0);
     }
     .item__image--reference { position: absolute; inset: 10px; pointer-events: none; }
-
-    /* ---- Blur-up anti-bianco ---- */
-    .dg-img { filter: blur(12px); transform: scale(1.03); transition: filter .35s ease, transform .35s ease; }
-    .dg-img:not(.dg-lazy) { filter: none; transform: none; }
   `;
 
   return (
@@ -785,8 +723,8 @@ export default function DomeGallery({
         ref={rootRef}
         className="sphere-root relative w-full h-full"
         style={{
-          ["--segments-x"]: effSegments,
-          ["--segments-y"]: effSegments,
+          ["--segments-x"]: segments,
+          ["--segments-y"]: segments,
           ["--overlay-blur-color"]: overlayBlurColor,
           ["--gradient-top"]: topGradientColor,
           ["--gradient-bottom"]: bottomGradientColor,
@@ -804,10 +742,6 @@ export default function DomeGallery({
             <div ref={sphereRef} className="sphere">
               {items.map((it, i) => {
                 const hasImg = !!it.src;
-             
-                const dist = Math.abs(it.x) + Math.abs(it.y);
-                const fetchPriority = dist <= 2 ? "high" : "low";
-
                 return (
                   <div
                     key={`${it.x},${it.y},${i}`}
@@ -824,7 +758,6 @@ export default function DomeGallery({
                       ["--item-size-x"]: it.sizeX,
                       ["--item-size-y"]: it.sizeY,
                       top: "-999px",
-
                       bottom: "-999px",
                       left: "-999px",
                       right: "-999px",
@@ -833,7 +766,7 @@ export default function DomeGallery({
                     <div
                       className={`item__image absolute block overflow-hidden transition-transform duration-300 ${
                         hasImg
-                          ? "cursor-pointer bg-[#E9D9B3]" 
+                          ? "cursor-pointer bg-gray-200"
                           : "pointer-events-none bg-transparent"
                       }`}
                       role={hasImg ? "button" : undefined}
@@ -859,26 +792,17 @@ export default function DomeGallery({
                     >
                       {hasImg ? (
                         <img
-          
-                          src={PLACEHOLDER_1x1}
-                          data-src={it.src}
+                          src={it.src}
                           alt={it.alt}
                           draggable={false}
                           loading="lazy"
                           decoding="async"
-                          fetchPriority={fetchPriority}
-                          className="w-full h-full object-cover pointer-events-none dg-img dg-lazy"
+                          className="w-full h-full object-cover pointer-events-none"
                           style={{
                             backfaceVisibility: "hidden",
                             filter: `var(--image-filter, ${
                               grayscale ? "grayscale(1)" : "none"
                             })`,
-                          }}
-                          onLoad={(e) => {
-                        
-                            if (e.currentTarget.src !== PLACEHOLDER_1x1) {
-                              e.currentTarget.classList.remove("dg-lazy");
-                            }
                           }}
                         />
                       ) : null}
@@ -888,20 +812,33 @@ export default function DomeGallery({
               })}
             </div>
           </div>
-          <div className="absolute inset-0 m-auto z-[3] pointer-events-none" />
-          <div className="absolute left-0 right-0 top-0 h-[120px] z-[5] pointer-events-none rotate-180" />
-          <div className="absolute left-0 right-0 bottom-0 h-[120px] z-[5] pointer-events-none" />
+          <div
+            className="absolute inset-0 m-auto z-[3] pointer-events-none"
+            
+          />
+         
+          <div
+            className="absolute left-0 right-0 top-0 h-[120px] z-[5] pointer-events-none rotate-180"
+           
+          />
+          <div
+            className="absolute left-0 right-0 bottom-0 h-[120px] z-[5] pointer-events-none"
+           
+          />
           <div
             ref={viewerRef}
             className="absolute inset-0 z-20 pointer-events-none flex items-center justify-center"
+
           >
             <div
               ref={scrimRef}
               className="scrim absolute inset-0 z-10 pointer-events-none opacity-0 transition-opacity duration-500"
+              
             />
             <div
               ref={frameRef}
               className="viewer-frame h-full aspect-square flex"
+            
             />
           </div>
         </main>

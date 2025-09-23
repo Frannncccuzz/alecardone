@@ -1,5 +1,4 @@
-// LanguageSelect.jsx
-"use client";
+
 import { useEffect, useRef, useState } from "react";
 import { useI18n } from "../../I18nProvider";
 import ReactCountryFlag from "react-country-flag";

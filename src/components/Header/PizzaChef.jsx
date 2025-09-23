@@ -11,7 +11,7 @@ export default function PizzaChef({
 }) {
   
 const premiazioni = (
-  <ul className="list-disc list-inside space-y-2 text-[#E9D9B3]">
+  <ul className="list-disc text-lg list-inside space-y-2 text-[#E9D9B3]">
     {Array.isArray(premi) && premi.map((p, i) => <li key={i}>{p}</li>)}
   </ul>
 );
@@ -32,7 +32,7 @@ const premiazioni = (
               {title}
             </h2>
             <h3
-              className={`text-md text-center md:text-xl font-semibold mb-6 text-[#E9D9B3] leading-tight 
+              className={`text-sm text-center md:text-2xl font-semibold mb-6 text-[#E9D9B3] leading-tight 
                           ${align === "sx" ? "md:text-left" : "md:text-right"}`}>
               {descriptionTitle}
             </h3>
@@ -44,7 +44,7 @@ const premiazioni = (
               {premi ? (
                 premiazioni
               ) : (
-                <p className="text-[#E9D9B3]/90 leading-relaxed">
+                <p className="text-[#E9D9B3]/90 text-md md:text-xl leading-relaxed">
                   {description}
                 </p>
               )}

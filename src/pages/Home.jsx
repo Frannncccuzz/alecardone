@@ -1,4 +1,4 @@
-//Componenti
+// Componenti
 import Logo from "../components/loghi";
 import Header from "../components/Header/Header";
 import PizzaChef from "../components/Header/PizzaChef";
@@ -6,22 +6,20 @@ import DomeGallery from "../components/Header/DomeGallery";
 import Review from "../components/DownSide/Review";
 import { useI18n } from "../I18nProvider";
 import { galleryImages } from "../assets/img/loghi/manifest.js";
-
-
-
-
-console.log("galleryModules:", galleryImages);
+import Footer from "../components/DownSide/Footer.jsx";
 
 
 export default function Home() {
-
   const { t } = useI18n();
+
   return (
     <main
-      className="relative w-full min-h-screen text-white
-                 bg-[#1B1B1B]"
+      className="relative w-full min-h-screen text-white bg-[#1B1B1B]
+                 pb-20 md:pb-0" // <-- spazio extra per la bottom bar su mobile
     >
-      <Header></Header>
+      <Header />
+      
+
       <PizzaChef
         title={t("alessandroSection.firstTitle")}
         descriptionTitle={t("alessandroSection.firstSubTitle")}
@@ -32,7 +30,7 @@ export default function Home() {
       <PizzaChef
         title={t("alessandroSection.secondTitle")}
         descriptionTitle={t("alessandroSection.secondSubTitle")}
-        img={"/img/pizzaale.jpg"}
+        img={"/img/aleteacher.jpg"}
         align="dx"
         description={t("alessandroSection.secondDescription")}
       />
@@ -43,11 +41,12 @@ export default function Home() {
         align="sx"
         premi={t("alessandroSection.thirdDescription")}
       />
+
       <section className="h-screen w-screen md:mb-30">
         <DomeGallery />
       </section>
 
-      <section className=" top-50 text-center text-2xl uppercase mt-4 md:text-5xl">
+      <section className="top-50 text-center text-2xl uppercase mt-4 md:text-5xl">
         <h1 className="mb-10">{t("DownSide.partner")}</h1>
         <ul className="flex flex-wrap gap-10 justify-center mt-20 items-center">
           {galleryImages.map((logo, logoInx) => (
@@ -55,13 +54,24 @@ export default function Home() {
           ))}
         </ul>
       </section>
-      <section className="container mx-auto px-4 py-10 flex flex-col md:flex-row md:flex-wrap  justify-evenly items-stretch">
+
+      <section className="container mx-auto px-4 py-10 flex flex-col md:flex-row md:flex-wrap justify-evenly items-stretch">
         <Review
           title={t("DownSide.feedback")}
           button={t("DownSide.buttonFeed")}
         />
       </section>
+
+      <Footer
+        facebook={"https://www.facebook.com/share/15zqgyX4eF/?mibextid=wwXIfr"}
+        insta={"https://www.instagram.com/_alessandrocardone_pizza_maker/"}
+        book={t("DownSide.book")}
+        nome={t("DownSide.nome")}
+        email={t("DownSide.email")}
+        telefono={t("DownSide.telefono")}
+        persone={t("DownSide.persone")}
+      />
+
     </main>
   );
 }
-

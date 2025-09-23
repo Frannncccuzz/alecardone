@@ -13,12 +13,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroui/react": "^2.8.4",
     "@use-gesture/react": "^10.3.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "google-reviews-widget": "^1.0.4",
     "gsap": "^3.13.0",
     "i18n": "^0.15.1",
+    "lucide-react": "^0.544.0",
     "motion": "^12.23.15",
     "react": "^19.1.1",
     "react-country-flag": "^3.1.0",
