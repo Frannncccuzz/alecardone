@@ -21,18 +21,23 @@ export default function LanguageSelect() {
   const btnRef = useRef(null);
   const listRef = useRef(null);
 
-  // calcola posizione sotto al bottone (usiamo position: fixed)
   const placeMenu = () => {
     const btn = btnRef.current;
     if (!btn) return;
     const r = btn.getBoundingClientRect();
-    // gap di 6px sotto il bottone, allinea a destra
-    const minWidth = Math.max(112, Math.ceil(r.width)); // almeno come il bottone
-    setPos({
-      top: Math.round(r.bottom + 6),
-      left: Math.round(r.right), // poi trasliamo -100% per allineare a destra
-      minWidth,
-    });
+    const minWidth = Math.max(112, Math.ceil(r.width));
+
+    // posizione base sotto il bottone, allineata a destra
+    let top = Math.round(r.bottom + 6);
+    let left = Math.round(r.right - minWidth); // allinea il bordo destro al destro del bottone
+
+    // clamp orizzontale (margine di sicurezza 8px)
+    const margin = 8;
+    const maxLeft = window.innerWidth - minWidth - margin;
+    if (left < margin) left = margin;
+    if (left > maxLeft) left = maxLeft;
+
+    setPos({ top, left, minWidth });
   };
 
   const openMenu = () => {
@@ -79,7 +84,7 @@ export default function LanguageSelect() {
   }, []);
 
   return (
-    <div ref={wrapRef} className="inline-flex items-center gap-1">
+    <div ref={wrapRef} className="absolute left-5 top-10  z-200 items-center gap-1">
       <button
         ref={btnRef}
         type="button"
@@ -112,13 +117,12 @@ export default function LanguageSelect() {
           ref={listRef}
           role="listbox"
           aria-label="Seleziona lingua"
-          className="
-            fixed z-[1000]
-            translate-x-[-58%]   /* allinea il bordo destro al bottone */
-            rounded-md border border-[#E9D9B3]/20
-            bg-[#1B1B1B] text-[#E9D9B3] shadow-lg
-            p-1
-          "
+          className=" 
+      fixed z-[9999] pointer-events-auto
+      rounded-md border border-[#E9D9B3]/25
+      bg-[#1B1B1B] text-[#E9D9B3] shadow-2xl
+      p-1
+    "
           style={{
             top: `${pos.top}px`,
             left: `${pos.left}px`,
@@ -137,10 +141,10 @@ export default function LanguageSelect() {
                 btnRef.current?.focus();
               }}
               className={`
-                flex items-center gap-2 px-2 py-1 rounded cursor-pointer
-                hover:bg-[#7B1E26]/25
-                ${l.code === lang ? "bg-[#7B1E26]/20" : ""}
-              `}
+          flex items-center gap-2 px-2 py-1 rounded cursor-pointer
+          hover:bg-[#7B1E26]/25
+          ${l.code === lang ? "bg-[#7B1E26]/20" : ""}
+        `}
             >
               <ReactCountryFlag
                 countryCode={l.cc}

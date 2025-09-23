@@ -1,10 +1,4 @@
 {
-  "nav": {
-    "home": "HOME",
-    "menu": "MENU'",
-    "book": "PRENOTA"
-  },
-
   "header": {
     "title": "Ristorante Pizzeria Rosa dei Venti",
     "subHeader": "Dove ogni pizza è un viaggio",
@@ -37,13 +31,13 @@
     "contact" : "contattaci",
     "nome": "Nome",
     "email": "Email",
-    "numero": "Numero Di Telefono",
     "persone": "Persone"
   },
 
  "menu": [
     {
       "categoria": "Antipasti",
+      "path": "antipasti",
       "tipologie": [
         {
           "nome": "Antipasti di Terra",
@@ -67,6 +61,7 @@
     },
     {
       "categoria": "Primi",
+      "path": "primi",
       "tipologie": [
         {
           "nome": "Primi di Pesce",
@@ -88,6 +83,7 @@
     },
     {
       "categoria": "Secondi",
+      "path": "secondi",
       "tipologie": [
         {
           "nome": "Secondi di Mare",
@@ -118,6 +114,7 @@
     },
     {
       "categoria": "Pizze",
+      "path": "pizze",
       "tipologie": [
         {
           "nome": "Pizze Classiche",
@@ -180,6 +177,8 @@
     },
     {
       "categoria": "Bevande",
+      "path": "bevande",
+
       "piatti": [
         { "nome": "Acqua in vetro Panna-S. Pellegrino", "prezzo": 2.50, "img": "" },
         { "nome": "Lattine: Coca-Fanta-Sprite", "prezzo": 3.00, "img": "" },
@@ -196,6 +195,7 @@
     },
     {
   "categoria": "Vini",
+  "path": "vini",
   "piatti": [
     { "nome": "Lambrusco Mantovano DOC", "prezzo": 12.00, "allergeni": ["Solfiti"], "img": "" },
     { "nome": "Chianti Classico DOCG", "prezzo": 18.00, "allergeni": ["Solfiti"], "img": "" },

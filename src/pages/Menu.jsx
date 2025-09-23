@@ -1,14 +1,15 @@
 import { useMemo, useState, useEffect, useCallback } from "react";
 import { useI18n } from "../I18nProvider";
 import { useNavigate } from "react-router-dom";
+import LanguageSelect from "../components/Navbar/LanguageSelect";
 
-const slugify = (str) =>
-  str
+function slugify(text) {
+  if (!text || typeof text !== "string") return "";
+  return text
     .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
+    .replace(/\s+/g, "-")
+    .replace(/[^\w-]+/g, "");
+}
 
 export default function Menu() {
   const navigate = useNavigate();
@@ -22,7 +23,8 @@ export default function Menu() {
 
   return (
     <section className="pt-10 pb-10 flex flex-col items-center md:mx-5 xl:mx-70">
-      <h1 className="text-4xl md:text-5xl font-bold uppercase mb-15">
+      <LanguageSelect/>
+      <h1 className="text-4xl md:text-5xl text-center relative top-10 font-bold uppercase mb-20">
         {t("header.menu")}
       </h1>
 
@@ -33,7 +35,7 @@ export default function Menu() {
             onClick={() => handleClickCategory(cat.categoria)}
             className="relative flex justify-center items-end w-80 h-50 rounded-3xl md:w-90 md:h-60 xl:w-120 xl:h-80 overflow-hidden"
             style={{
-              backgroundImage: `url(/img/${slugify(cat.categoria)}.jpg)`,
+              backgroundImage: `url(/img/${slugify(cat.path)}.jpg)`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

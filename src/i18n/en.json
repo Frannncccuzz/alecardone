@@ -1,186 +1,205 @@
 {
-  "nav": {
-    "home": "Home",
-    "menu": "Menu",
-    "book": "Book"
-  },
-
   "header": {
-    "title": "Hello Mom",
-    "subHeader": "Animation Test"
+    "title": "Ristorante Pizzeria Rosa dei Venti",
+    "subHeader": "Where every pizza is a journey",
+    "menu": "Discover our menu"
   },
-
   "alessandroSection": {
-    "firstTitle": "The Beginning",
+    "firstTitle": "Our Master",
     "firstSubTitle": "Alessandro Cardone",
-    "firstDescription": "My story began at 11, in front of the family oven: at first it was just a family game, then it became a passion. From the first evenings in pizzerias to experimenting with dough, proofing and temperatures, came the first competitions and prizes. I chose to train seriously at ALMA, deepening my knowledge of flours, yeasts and heat management, up to the instructor master and more than 15 masterclasses. I learned that details matter: ingredients, balance, lightness. Today I bring that method to my daily work: every pizza is born from that spark lit as a child.",
+    "firstDescription": "I lit my first oven at 11, just for fun. From there, a passion was born that led me to ALMA, competitions, and continuous training. Today, in every pizza I seek the same spark as back then: selected ingredients, balance, and lightness.",
     "secondTitle": "From the oven to the world",
     "secondSubTitle": "My international experience",
-    "secondDescription": "After a master as an instructor and over 15 masterclasses, I joined the Pizzadoc Academy as an official instructor. I had the opportunity to work with international masters and to bring my experience as far as Argentina and Brazil together with president Antonio Giaccoli. Each step enriched me and made me grow, and today I continue my path with the same energy as always: passion, curiosity, and the desire to share what I have learned.",
+    "secondDescription": "After a master’s degree and 15 masterclasses I became an official Pizzadoc instructor, taking my experience to Argentina and Brazil. Today I continue with the same energy: passion, curiosity, and the desire to share.",
     "thirdTitle": "My achievements",
-    "thirdSubTitle": "Awards and recognitions",
+    "thirdSubTitle": "Among the most recent successes:",
     "thirdDescription": [
-      "1st place – Classic Pizza Championship, Naples 2021",
-      "2nd place – Contemporary Pizza, Rome 2020",
-      "Special Innovation Award – PizzAward, Milan 2019",
-      "Finalist – World Pizza Championship, Parma 2018",
-      "1st place – Neapolitan Pizza STG Trophy, Salerno 2018",
-      "2nd place – World Gluten-Free Pizza Championship, Parma 2017",
-      "Best Dough Award – Regional Pizza DOC Competition, Avellino 2016",
-      "1st place – Creative Pizza, Rome 2016",
-      "3rd place – Italian Pizza Championship, Milan 2015",
-      "Finalist – Pizza Talent Show, Verona 2015"
+      "🥇 Pizza Classica Championship, Naples 2021",
+      "🥈 Contemporary Pizza, Rome 2020",
+      "🏆 Innovation Award – PizzAward, Milan 2019",
+      "🥇 Neapolitan Pizza STG Trophy, Salerno 2018",
+      "🌍 Finalist – World Pizza Championship, Parma 2018"
     ]
   },
-
   "DownSide": {
     "partner": "Our Partner Companies",
     "feedback": "Reviews",
     "buttonFeed": "Write a Review",
-    "book": "Book Your Table",
-    "bookDescription": "and get 10% off",
-    "buttonBook": "Book Now"
+    "book": "Come Visit Us!",
+    "contact": "Contact us",
+    "nome": "Name",
+    "email": "Email",
+    "persone": "People"
   },
-
-   "menu": [
-   {
-  "categoria": "Appetizers",
-  "tipologie": [
+  "menu": [
     {
-      "nome": "Land Appetizers",
-      "piatti": [
-        { "nome": "Mixed cold cuts with cheese and fried gnocco", "prezzo": 14.00, "allergeni": ["Gluten", "Dairy"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
-        { "nome": "Buffalo mozzarella with cured ham", "prezzo": 13.00, "allergeni": ["Dairy"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
-        { "nome": "Veal with tuna sauce and Pantelleria capers", "prezzo": 13.00, "allergeni": ["Eggs", "Fish"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
-        { "nome": "Bresaola with arugula and parmesan", "prezzo": 13.00, "allergeni": ["Dairy"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" }
+      "categoria": "Appetizers",
+      "path": "antipasti",
+      "tipologie": [
+        {
+          "nome": "Land Appetizers",
+          "piatti": [
+            { "nome": "Mixed cold cuts with cheeses and fried gnocco", "prezzo": 400.00, "allergeni": ["Gluten", "Dairy"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
+            { "nome": "Buffalo mozzarella with cured ham", "prezzo": 13.00, "allergeni": ["Dairy"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
+            { "nome": "Veal with tuna sauce and Pantelleria capers", "prezzo": 13.00, "allergeni": ["Eggs", "Fish"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
+            { "nome": "Bresaola with arugula and parmesan", "prezzo": 13.00, "allergeni": ["Dairy"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" }
+          ]
+        },
+        {
+          "nome": "Sea Appetizers",
+          "piatti": [
+            { "nome": "Mixed seafood appetizer", "prezzo": 19.00, "allergeni": ["Fish", "Crustaceans", "Mollusks"], "img": "" },
+            { "nome": "Grilled octopus with potato velouté", "prezzo": 18.00, "allergeni": ["Mollusks"], "img": "" },
+            { "nome": "Mixed seafood au gratin", "prezzo": 22.00, "allergeni": ["Fish", "Crustaceans", "Mollusks", "Gluten", "Dairy"], "img": "" },
+            { "nome": "Swordfish carpaccio", "prezzo": 14.00, "allergeni": ["Fish"], "img": "" }
+          ]
+        }
       ]
     },
     {
-      "nome": "Sea Appetizers",
-      "piatti": [
-        { "nome": "Mixed seafood appetizer", "prezzo": 19.00, "allergeni": ["Fish", "Crustaceans", "Mollusks"], "img": "" },
-        { "nome": "Grilled octopus with potato velouté", "prezzo": 18.00, "allergeni": ["Mollusks"], "img": "" },
-        { "nome": "Mixed seafood gratin", "prezzo": 22.00, "allergeni": ["Fish", "Crustaceans", "Mollusks", "Gluten", "Dairy"], "img": "" },
-        { "nome": "Swordfish carpaccio", "prezzo": 14.00, "allergeni": ["Fish"], "img": "" }
-      ]
-    }
-  ]
-},
-{
-  "categoria": "First Courses",
-  "tipologie": [
-    {
-      "nome": "Sea First Courses",
-      "piatti": [
-        { "nome": "Spaghetti with clams and bottarga", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Mollusks"], "img": "" },
-        { "nome": "Scialatielli with seafood", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks"], "img": "" },
-        { "nome": "Tortelli with scallops and prawns", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks", "Dairy"], "img": "" }
-      ]
-    },
-    {
-      "nome": "Land First Courses",
-      "piatti": [
-        { "nome": "Violette pasta with speck and gorgonzola", "prezzo": 13.00, "allergeni": ["Gluten", "Dairy"], "img": "" },
-        { "nome": "Gragnano spaghetti carbonara with guanciale", "prezzo": 11.00, "allergeni": ["Gluten", "Eggs", "Dairy"], "img": "" },
-        { "nome": "Mediterranean spaghetti", "prezzo": 10.00, "allergeni": ["Gluten"], "img": "" }
-      ]
-    }
-  ]
-},
-{
-  "categoria": "Main Courses",
-  "tipologie": [
-    {
-      "nome": "Sea Main Courses",
-      "piatti": [
-        { "nome": "Fried calamari, prawns and anchovies", "prezzo": 18.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks"], "img": "" },
-        { "nome": "Grilled swordfish", "prezzo": 18.00, "allergeni": ["Fish"], "img": "" },
-        { "nome": "Mixed grilled fish (prawns, scampi, sea bass)", "prezzo": 30.00, "allergeni": ["Fish", "Crustaceans", "Mollusks"], "img": "" },
-        { "nome": "Grilled calamari with pea cream", "prezzo": 18.00, "allergeni": ["Mollusks"], "img": "" }
+      "categoria": "First Courses",
+      "path": "primi",
+      "tipologie": [
+        {
+          "nome": "Seafood First Courses",
+          "piatti": [
+            { "nome": "Spaghetti with clams and bottarga", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Mollusks"], "img": "" },
+            { "nome": "Scialatielli with seafood", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks"], "img": "" },
+            { "nome": "Tortelli with scallops and scampi", "prezzo": 13.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks", "Dairy"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Land First Courses",
+          "piatti": [
+            { "nome": "Violette pasta with speck and gorgonzola", "prezzo": 13.00, "allergeni": ["Gluten", "Dairy"], "img": "" },
+            { "nome": "Gragnano spaghetti carbonara with guanciale", "prezzo": 11.00, "allergeni": ["Gluten", "Eggs", "Dairy"], "img": "" },
+            { "nome": "Mediterranean spaghetti", "prezzo": 10.00, "allergeni": ["Gluten"], "img": "" }
+          ]
+        }
       ]
     },
     {
-      "nome": "Land Main Courses",
-      "piatti": [
-        { "nome": "Prime Quinn Irish Angus rib steak 550g", "prezzo": 23.00, "img": "" },
-        { "nome": "Milanese cutlet with fries", "prezzo": 16.00, "allergeni": ["Gluten", "Eggs"], "img": "" },
-        { "nome": "Sliced beef with arugula and parmesan", "prezzo": 23.00, "allergeni": ["Dairy"], "img": "" }
+      "categoria": "Main Courses",
+      "path": "secondi",
+      "tipologie": [
+        {
+          "nome": "Seafood Main Courses",
+          "piatti": [
+            { "nome": "Fried calamari, shrimp and anchovies", "prezzo": 18.00, "allergeni": ["Gluten", "Fish", "Crustaceans", "Mollusks"], "img": "" },
+            { "nome": "Grilled swordfish", "prezzo": 18.00, "allergeni": ["Fish"], "img": "" },
+            { "nome": "Mixed grilled fish (shrimp, scampi, sea bass)", "prezzo": 30.00, "allergeni": ["Fish", "Crustaceans", "Mollusks"], "img": "" },
+            { "nome": "Grilled calamari with pea cream", "prezzo": 18.00, "allergeni": ["Mollusks"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Land Main Courses",
+          "piatti": [
+            { "nome": "Angus prime rib 550 g", "prezzo": 23.00, "img": "" },
+            { "nome": "Milanese cutlet with fries", "prezzo": 16.00, "allergeni": ["Gluten", "Eggs"], "img": "" },
+            { "nome": "Sliced beef with arugula and parmesan", "prezzo": 23.00, "allergeni": ["Dairy"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Side Dishes",
+          "piatti": [
+            { "nome": "Grilled vegetables", "prezzo": 6.00, "img": "" },
+            { "nome": "Salad", "prezzo": 5.00, "img": "" },
+            { "nome": "French fries", "prezzo": 6.00, "img": "" }
+          ]
+        }
       ]
     },
     {
-      "nome": "Side Dishes",
-      "piatti": [
-        { "nome": "Grilled vegetables", "prezzo": 6.00, "img": "" },
-        { "nome": "Salad", "prezzo": 5.00, "img": "" },
-        { "nome": "French fries", "prezzo": 6.00, "img": "" }
-      ]
-    }
-  ]
-},
-
-    {
-  "categoria": "Pizzas",
-  "piatti": [
-    { "nome": "Regina Margherita", "prezzo": 8.50, "descrizione": "Tomato, fior di latte, cherry tomato, buffalo mozzarella, extra virgin olive oil, parmesan, basil.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Calzone", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, cooked ham.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Calzone alla parmigiana", "prezzo": 9.00, "descrizione": "Tomato, fior di latte, ricotta, eggplant, cooked ham, parmesan.", "allergeni": ["Dairy", "Eggs"], "img": "" },
-    { "nome": "Contadina", "prezzo": 8.50, "descrizione": "Fior di latte, sliced potatoes, wurstel sausage.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Tirolese", "prezzo": 10.00, "descrizione": "Cream, fior di latte, porcini mushrooms, speck.", "allergeni": ["Dairy", "Mushrooms"], "img": "" },
-    { "nome": "Messicana", "prezzo": 9.00, "descrizione": "Tomato, fior di latte, spicy salami, bacon, olives, beans.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Sole", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, egg, bacon, wurstel.", "allergeni": ["Dairy", "Eggs"], "img": "" },
-    { "nome": "Recco", "prezzo": 8.00, "descrizione": "Handmade focaccia stuffed with crescenza cheese.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Recco ai formaggi", "prezzo": 9.00, "descrizione": "Handmade focaccia stuffed with crescenza and mixed cheeses.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Stracchinetta", "prezzo": 8.50, "descrizione": "Buffalo mozzarella, cherry tomatoes, arugula, cured ham.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Zozza", "prezzo": 9.00, "descrizione": "Tomato, fior di latte, peppers, onion, salami, gorgonzola.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Zane", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, onion, parmesan, parsley, chili pepper.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Fumi", "prezzo": 12.00, "descrizione": "Fior di latte, fresh tomato, smoked swordfish, arugula, oil.", "allergeni": ["Fish"], "img": "" },
-    { "nome": "Bresaola", "prezzo": 10.00, "descrizione": "Bresaola, fior di latte, arugula, parmesan flakes, oil.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Pizza al tonno", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, tuna.", "allergeni": ["Fish"], "img": "" },
-    { "nome": "Napoletana", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, anchovies, oregano.", "allergeni": ["Fish", "Dairy"], "img": "" },
-    { "nome": "5 formaggi", "prezzo": 8.50, "descrizione": "Extra virgin olive oil, tomato, fior di latte, mixed cheeses.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Gorgonzola", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, gorgonzola.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Prosciutto cotto", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, cooked ham.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "4 stagioni", "prezzo": 8.50, "descrizione": "Tomato, fior di latte, artichokes, mushrooms, cooked ham, olives.", "allergeni": ["Dairy", "Mushrooms"], "img": "" },
-    { "nome": "Fresca", "prezzo": 13.00, "descrizione": "San Marzano tomatoes, mozzarella fior di latte, cherry tomatoes, basil, oregano, extra virgin olive oil.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Marinara", "prezzo": 7.00, "descrizione": "Extra virgin olive oil, tomato, garlic, oregano, basil.", "allergeni": [], "img": "" },
-    { "nome": "Margherita", "prezzo": 7.00, "descrizione": "Tomato, fior di latte.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Capricciosa", "prezzo": 8.50, "descrizione": "Tomato, fior di latte, artichokes, mushrooms, cooked ham, olives, salami.", "allergeni": ["Dairy", "Eggs"], "img": "" },
-    { "nome": "Pizza Pazza", "prezzo": 9.00, "descrizione": "Tomato, fior di latte, mixed vegetables, spicy salami, scamorza cheese.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Ortolana", "prezzo": 8.50, "descrizione": "Tomato, fior di latte, grilled vegetables, cherry tomatoes.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Boscaiola", "prezzo": 9.00, "descrizione": "Tomato, fior di latte, porcini mushrooms.", "allergeni": ["Dairy", "Mushrooms"], "img": "" },
-    { "nome": "Deliziosa", "prezzo": 9.00, "descrizione": "Tomato, fior di latte, speck, brie.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Friarielli e salsiccia", "prezzo": 8.50, "descrizione": "Fior di latte, broccoli rabe, sausage.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Cotto e zola", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, cooked ham, gorgonzola.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Mare verde", "prezzo": 8.50, "descrizione": "Tomato, fior di latte, arugula, shrimp.", "allergeni": ["Dairy", "Fish", "Shellfish"], "img": "" },
-    { "nome": "Pullo", "prezzo": 7.50, "descrizione": "Tomato, fior di latte, wurstel, French fries.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Mare e monti", "prezzo": 9.50, "descrizione": "Extra virgin olive oil, tomato, fior di latte, shrimp, porcini mushrooms.", "allergeni": ["Dairy", "Fish", "Mushrooms"], "img": "" },
-    { "nome": "Marianella", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, spicy salami, anchovies.", "allergeni": ["Dairy", "Fish"], "img": "" },
-    { "nome": "Reginella", "prezzo": 9.50, "descrizione": "Tomato, fior di latte, fresh tomatoes, buffalo mozzarella, arugula, parmesan.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Gennariello", "prezzo": 8.00, "descrizione": "Tomato, fior di latte, spicy salami, eggplant.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Calamari", "prezzo": 13.00, "descrizione": "Tomato, fior di latte, calamari.", "allergeni": ["Fish", "Mollusks"], "img": "" },
-    { "nome": "Olimpiadi della pizza", "prezzo": 14.00, "descrizione": "Tomato, fior di latte, cherry tomatoes, shrimp, smoked salmon, mussels, arugula, extra virgin olive oil, lemon.", "allergeni": ["Fish", "Shellfish", "Dairy"], "img": "" },
-    { "nome": "Giro pizza Europa", "prezzo": 13.00, "descrizione": "Walnuts, fior di latte, lardo di Colonnata, chestnut honey, parmesan.", "allergeni": ["Dairy", "Nuts"], "img": "" },
-    { "nome": "Pizza Stracciatella", "prezzo": 14.00, "descrizione": "Fresh tomato, buffalo stracciatella, basil, extra virgin olive oil.", "allergeni": ["Dairy"], "img": "" },
-    { "nome": "Mortazza", "prezzo": 14.00, "descrizione": "White base, pistachio pesto, mortadella, buffalo burrata, basil, extra virgin olive oil.", "allergeni": ["Dairy", "Nuts"], "img": "" },
-    { "nome": "Focaccia", "prezzo": 6.00, "descrizione": "Simple focaccia with oil and salt.", "allergeni": [], "img": "" }
+      "categoria": "Pizzas",
+      "path": "pizze",
+      "tipologie": [
+        {
+          "nome": "Classic Pizzas",
+          "piatti": [
+            { "nome": "Marinara", "prezzo": 7.00, "descrizione": "Extra virgin olive oil, San Marzano tomato (Solania), garlic, oregano, basil.", "allergeni": [], "img": "" },
+            { "nome": "Capricciosa", "prezzo": 8.50, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), artichokes, mushrooms, cooked ham, olives, salami.", "allergeni": ["Dairy", "Eggs"], "img": "" },
+            { "nome": "4 Seasons", "prezzo": 8.50, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), artichokes, mushrooms, cooked ham, extra olives.", "allergeni": ["Dairy", "Mushrooms"], "img": "" },
+            { "nome": "Neapolitan", "prezzo": 8.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), anchovies, oregano.", "allergeni": ["Fish", "Dairy"], "img": "" },
+            { "nome": "Tuna Pizza", "prezzo": 8.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), tuna.", "allergeni": ["Fish"], "img": "" },
+            { "nome": "Pluto", "prezzo": 8.50, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), würstel, fries.", "allergeni": ["Dairy", "Gluten"], "img": "" },
+            { "nome": "Surf & Turf", "prezzo": 9.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), shrimp, porcini mushrooms.", "allergeni": ["Fish", "Mushrooms", "Dairy"], "img": "" },
+            { "nome": "Marianello", "prezzo": 8.50, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), spicy salami, olives, anchovies.", "allergeni": ["Fish", "Dairy"], "img": "" },
+            { "nome": "Reginella", "prezzo": 10.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), cherry tomatoes, buffalo mozzarella, topped with arugula, prosciutto crudo, caciocavallo.", "allergeni": ["Dairy", "Gluten"], "img": "" },
+            { "nome": "Calamari", "prezzo": 13.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), fried calamari.", "allergeni": ["Fish", "Gluten", "Dairy"], "img": "" },
+            { "nome": "Zozza", "prezzo": 9.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), peppers, onion, salami, gorgonzola.", "allergeni": ["Dairy", "Gluten"], "img": "" }
+          ]
+        },
+        {
+          "nome": "White Pizzas",
+          "piatti": [
+            { "nome": "Tyrolean", "prezzo": 10.00, "descrizione": "Cream, Fiordilatte (Sapori e Delizie), porcini mushrooms, speck.", "allergeni": ["Dairy", "Mushrooms"], "img": "" },
+            { "nome": "Broccoli Rabe & Sausage", "prezzo": 9.00, "descrizione": "Fiordilatte (Sapori e Delizie), broccoli rabe, sausage.", "allergeni": ["Dairy"], "img": "" },
+            { "nome": "Mortazza", "prezzo": 14.00, "descrizione": "White base, pistachio pesto, mortadella, buffalo burrata, basil, olive oil.", "allergeni": ["Dairy", "Nuts"], "img": "" },
+            { "nome": "Stracchinella", "prezzo": 8.50, "descrizione": "Fiordilatte (Sapori e Delizie), stracchinella, arugula on top.", "allergeni": ["Dairy", "Gluten"], "img": "" },
+            { "nome": "Country Style", "prezzo": 8.50, "descrizione": "Fiordilatte (Sapori e Delizie), zucchini slices, gorgonzola.", "allergeni": ["Dairy", "Gluten"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Calzones",
+          "piatti": [
+            { "nome": "Classic Calzone", "prezzo": 8.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), cooked ham.", "allergeni": ["Dairy", "Gluten"], "img": "" },
+            { "nome": "Parmigiana Calzone", "prezzo": 9.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), eggplant, cooked ham, parmesan.", "allergeni": ["Dairy", "Gluten"], "img": "" },
+            { "nome": "Recco", "prezzo": 8.00, "descrizione": "Hand-stretched focaccia filled with stracchino.", "allergeni": ["Dairy", "Gluten"], "img": "" },
+            { "nome": "Recco with cheeses", "prezzo": 9.00, "descrizione": "Hand-stretched focaccia filled with stracchino and mixed cheeses.", "allergeni": ["Dairy", "Gluten"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Special Pizzas",
+          "piatti": [
+            { "nome": "Pizza Olympics", "prezzo": 14.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), cherry tomatoes, shrimp, smoked salmon, mussels, arugula, olive oil, lemon.", "allergeni": ["Fish", "Crustaceans", "Dairy"], "img": "" },
+            { "nome": "Pizza Tour of Europe", "prezzo": 14.00, "descrizione": "Walnuts, Fiordilatte (Sapori e Delizie), lardo di Colonnata, chestnut honey, parmesan.", "allergeni": ["Dairy", "Nuts"], "img": "" },
+            { "nome": "Stracciatozza", "prezzo": 15.00, "descrizione": "Raw San Marzano tomato (Solania), buffalo stracciatella, basil, olive oil.", "allergeni": ["Dairy"], "img": "" },
+            { "nome": "Mortazza", "prezzo": 15.00, "descrizione": "White base, pistachio pesto, mortadella, buffalo burrata, basil, olive oil.", "allergeni": ["Dairy", "Nuts"], "img": "" },
+            { "nome": "Futuristic Marinara", "prezzo": 18.00, "descrizione": "San Marzano tomato (Solania), Cantabrian anchovies, fermented black olive powder, Pantelleria caper powder, yellow cherry tomatoes, wild garlic pesto (Menù), Montesaro oregano, crystallized basil.", "allergeni": ["Fish", "Dairy", "Gluten"], "img": "", "dediche": "Pizza created by Francesco Martucci" },
+            { "nome": "From South to North", "prezzo": 18.00, "descrizione": "Mozzarella, Fiordilatte (Sapori e Delizie), Tropea onions, Sottocenere, tuna fillet (Calippo), fermented black olive powder, Pantelleria caper powder, caramelized Breme onion (Slow Food), 'nduja from Spilinga, crystallized basil (not fried).", "allergeni": ["Fish", "Dairy", "Gluten"], "img": "", "dediche": "Pizza created by master Vincenzo Fotia" },
+            { "nome": "My Gricia", "prezzo": 16.00, "descrizione": "Cacio e pepe cream (Menù), Fiordilatte (Sapori e Delizie), dehydrated Amatrice guanciale, black pepper.", "allergeni": ["Dairy", "Gluten"], "img": "" },
+            { "nome": "Truffle & Buffalo", "prezzo": 15.00, "descrizione": "White base, buffalo mozzarella, truffle cream, parmesan flakes, olive oil.", "allergeni": ["Dairy"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Margheritas",
+          "piatti": [
+            { "nome": "Classic Margherita", "prezzo": 7.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie).", "allergeni": ["Dairy", "Gluten"], "img": "../public/Pizzaimg.jpg" },
+            { "nome": "Yellow Margherita", "prezzo": 8.00, "descrizione": "San Marzano tomato (Solania) yellow datterino, Fiordilatte (Sapori e Delizie).", "allergeni": ["Dairy", "Gluten"], "img": "" },
+            { "nome": "Queen Margherita", "prezzo": 10.00, "descrizione": "San Marzano tomato (Solania), cherry tomatoes, buffalo mozzarella, Parmigiano Reggiano, basil (all baked).", "allergeni": ["Dairy", "Gluten"], "img": "" },
+            { "nome": "Essence of Margherita", "prezzo": 12.00, "descrizione": "San Marzano tomato (Solania), Fiordilatte (Sapori e Delizie), stracciatella, basil in two consistencies (fresh and fried), dehydrated Parmesan powder.", "allergeni": ["Dairy", "Gluten"], "img": "" }
+          ]
+        }
       ]
     },
     {
-  "categoria": "Drinks",
-  "piatti": [
-    { "nome": "Glass bottle water Panna-S. Pellegrino", "prezzo": 2.50, "img": "" },
-    { "nome": "Cans: Coke-Fanta-Sprite", "prezzo": 3.00, "img": "" },
-    { "nome": "Small blonde beer", "prezzo": 3.50, "allergeni": ["Gluten"], "img": "" },
-    { "nome": "Medium blonde beer", "prezzo": 5.00, "allergeni": ["Gluten"], "img": "" },
-    { "nome": "Small Leffe", "prezzo": 4.00, "allergeni": ["Gluten"], "img": "" },
-    { "nome": "Medium Leffe", "prezzo": 5.50, "allergeni": ["Gluten"], "img": "" },
-    { "nome": "Draft wine 1/2 Litre", "prezzo": 4.00, "img": "" },
-    { "nome": "Draft wine 1 Litre", "prezzo": 8.00, "img": "" },
-    { "nome": "Bitters", "prezzo": 3.00, "allergeni": ["Sulfites"], "img": "" },
-    { "nome": "Coffee", "prezzo": 1.50, "img": "" },
-    { "nome": "Desserts", "prezzo": 6.00, "allergeni": ["Gluten", "Eggs", "Dairy", "Nuts"], "img": "" }
+      "categoria": "Drinks",
+      "path": "bevande",
+      "piatti": [
+        { "nome": "Still/Sparkling water (glass bottle) Panna–S. Pellegrino", "prezzo": 2.50, "img": "" },
+        { "nome": "Cans: Coke–Fanta–Sprite", "prezzo": 3.00, "img": "" },
+        { "nome": "Small lager", "prezzo": 3.50, "allergeni": ["Gluten"], "img": "" },
+        { "nome": "Medium lager", "prezzo": 5.00, "allergeni": ["Gluten"], "img": "" },
+        { "nome": "Small Leffe", "prezzo": 4.00, "allergeni": ["Gluten"], "img": "" },
+        { "nome": "Medium Leffe", "prezzo": 5.50, "allergeni": ["Gluten"], "img": "" },
+        { "nome": "House wine on tap 1/2 Litre", "prezzo": 4.00, "img": "" },
+        { "nome": "House wine on tap 1 Litre", "prezzo": 8.00, "img": "" },
+        { "nome": "Bitters/Digestifs", "prezzo": 3.00, "allergeni": ["Sulfites"], "img": "" },
+        { "nome": "Coffee", "prezzo": 1.50, "img": "" },
+        { "nome": "Desserts", "prezzo": 6.00, "allergeni": ["Gluten", "Eggs", "Dairy", "Nuts"], "img": "" }
+      ]
+    },
+    {
+      "categoria": "Wines",
+      "path": "vini",
+      "piatti": [
+        { "nome": "Lambrusco Mantovano DOC", "prezzo": 12.00, "allergeni": ["Sulfites"], "img": "" },
+        { "nome": "Chianti Classico DOCG", "prezzo": 18.00, "allergeni": ["Sulfites"], "img": "" },
+        { "nome": "Montepulciano d’Abruzzo", "prezzo": 16.00, "allergeni": ["Sulfites"], "img": "" },
+        { "nome": "Vermentino di Sardegna", "prezzo": 15.00, "allergeni": ["Sulfites"], "img": "" },
+        { "nome": "Prosecco Superiore DOCG", "prezzo": 14.00, "allergeni": ["Sulfites"], "img": "" },
+        { "nome": "Barolo DOCG", "prezzo": 35.00, "allergeni": ["Sulfites"], "img": "" }
       ]
     }
   ]
 }
-  

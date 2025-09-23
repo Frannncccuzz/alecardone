@@ -7,6 +7,7 @@ import Review from "../components/DownSide/Review";
 import { useI18n } from "../I18nProvider";
 import { galleryImages } from "../assets/img/loghi/manifest.js";
 import Footer from "../components/DownSide/Footer.jsx";
+import LanguageSelect from "../components/Navbar/LanguageSelect.jsx";
 
 
 export default function Home() {
@@ -15,8 +16,9 @@ export default function Home() {
   return (
     <main
       className="relative w-full min-h-screen text-white bg-[#1B1B1B]
-                 pb-20 md:pb-0" // <-- spazio extra per la bottom bar su mobile
+                 pb-20 md:pb-0"
     >
+      <LanguageSelect />
       <Header />
       
 
@@ -71,7 +73,6 @@ export default function Home() {
         telefono={t("DownSide.telefono")}
         persone={t("DownSide.persone")}
       />
-
     </main>
   );
 }

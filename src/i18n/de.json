@@ -1,168 +1,208 @@
-
 {
-  "nav": {
-    "home": "Startseite",
-    "menu": "Menü",
-    "book": "Buchen"
-  },
   "header": {
-    "title": "Willkommen auf unserer Website!",
-    "subHeader": "Animation testen"
+    "title": "Restaurant Pizzeria Rosa dei Venti",
+    "subHeader": "Wo jede Pizza eine Reise ist",
+    "menu": "Entdecken Sie unsere Speisekarte"
   },
+
   "alessandroSection": {
-    "firstTitle": "Der Meister",
+    "firstTitle": "Unser Meister",
     "firstSubTitle": "Alessandro Cardone",
-    "firstDescription": "Meine Geschichte beginnt im Alter von 11 Jahren vor dem heimischen Ofen: Zuerst war es ein Familienspiel, dann wurde es eine Leidenschaft. Von den ersten Abenden in der Pizzeria bis zu den Experimenten mit Teigen, Gärung und Temperaturen kamen die ersten Wettbewerbe und die ersten Preise. Ich entschied mich, mich ernsthaft an der ALMA ausbilden zu lassen, vertiefte mich in Mehle, Hefen und Wärmemanagement, bis hin zum Instruktor-Master und über 15 Masterclasses. Ich habe gelernt, dass die Details zählen: Zutaten, Ausgewogenheit, Leichtigkeit. Heute bringe ich diese Methode in meine tägliche Arbeit ein: Jede Pizza entsteht aus dem Funken, der als Kind entzündet wurde.",
+    "firstDescription": "Ich habe den ersten Ofen mit 11 Jahren angezündet, zum Spaß. Daraus entstand eine Leidenschaft, die mich zur ALMA, zu Wettkämpfen und zur kontinuierlichen Weiterbildung führte. Heute suche ich in jeder Pizza denselben Funken wie damals: ausgewählte Zutaten, Ausgewogenheit und Leichtigkeit.",
     "secondTitle": "Vom Ofen in die Welt",
     "secondSubTitle": "Meine internationale Erfahrung",
-    "secondDescription": "Nach einem Instruktor-Master und über 15 Masterclasses trat ich als offizieller Instruktor in die Accademia Pizzadoc ein. Ich hatte die Gelegenheit, mit internationalen Meistern zu arbeiten und meine Erfahrung bis nach Argentinien und Brasilien an der Seite von Präsident Antonio Giaccoli zu bringen. Jede Etappe hat mich bereichert und wachsen lassen, und heute setze ich meinen Weg mit derselben Energie wie immer fort: Leidenschaft, Neugier und der Wunsch, mein Wissen weiterzugeben.",
+    "secondDescription": "Nach einem Master und 15 Masterclasses wurde ich offizieller Pizzadoc-Instruktor und brachte meine Erfahrung bis nach Argentinien und Brasilien. Heute mache ich mit derselben Energie weiter: Leidenschaft, Neugier und Lust am Teilen.",
     "thirdTitle": "Meine Erfolge",
-    "thirdSubTitle": "Preise und Auszeichnungen",
+    "thirdSubTitle": "Unter den jüngsten Erfolgen:",
     "thirdDescription": [
-      "1. Platz – Klassische Pizza-Meisterschaft, Neapel 2021",
-      "2. Platz – Zeitgenössische Pizza, Rom 2020",
-      "Sonderpreis Innovation – PizzAward, Mailand 2019",
-      "Finalist – Weltmeisterschaft der Pizza, Parma 2018",
-      "1. Platz – Neapolitanische Pizza STG Trophy, Salerno 2018",
-      "2. Platz – Weltmeisterschaft der Glutenfreien Pizza, Parma 2017",
-      "Bester Teig Preis – Regionaler Pizza DOC Wettbewerb, Avellino 2016",
-      "1. Platz – Kreative Pizza, Rom 2016",
-      "3. Platz – Italienische Pizzabäcker-Meisterschaft, Mailand 2015",
-      "Finalist – Pizza Talent Show, Verona 2015"
+      "🥇 Meisterschaft Klassische Pizza, Neapel 2021",
+      "🥈 Zeitgenössische Pizza, Rom 2020",
+      "🏆 Innovationspreis – PizzAward, Mailand 2019",
+      "🥇 Trophäe Neapolitanische Pizza STG, Salerno 2018",
+      "🌍 Finalist – World Pizza Championship, Parma 2018"
     ]
   },
+
   "DownSide": {
     "partner": "Unsere Partnerunternehmen",
     "feedback": "Bewertungen",
-    "buttonFeed": "Eine Bewertung schreiben",
-    "book": "Reservieren Sie Ihren Tisch",
-    "bookDescription": "und erhalten Sie 10% Rabatt",
-    "buttonBook": "Jetzt reservieren"
+    "buttonFeed": "Schreiben Sie eine Bewertung",
+    "book": "Besuchen Sie uns!",
+    "contact" : "kontaktieren Sie uns",
+    "nome": "Name",
+    "email": "E-Mail",
+    "persone": "Personen"
   },
-  "menu": [
+
+ "menu": [
     {
-      "categoria": "Vorspeisen vom Land",
+      "categoria": "Vorspeisen",
+      "path": "antipasti",
+      "tipologie": [
+        {
+          "nome": "Vorspeisen vom Land",
+          "piatti": [
+            { "nome": "Gemischte Aufschnitte mit Käse und gebratenem Gnocco", "prezzo": 400.00, "allergeni": ["Gluten", "Milchprodukte"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
+            { "nome": "Büffelmozzarella mit rohem Schinken", "prezzo": 13.00, "allergeni": ["Milchprodukte"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
+            { "nome": "Vitello tonnato mit Kapern aus Pantelleria", "prezzo": 13.00, "allergeni": ["Eier", "Fisch"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" },
+            { "nome": "Bresaola mit Rucola und Grana", "prezzo": 13.00, "allergeni": ["Milchprodukte"], "img": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" }
+          ]
+        },
+        {
+          "nome": "Vorspeisen vom Meer",
+          "piatti": [
+            { "nome": "Gemischte Fischvorspeise", "prezzo": 19.00, "allergeni": ["Fisch", "Krebstiere", "Weichtiere"], "img": "" },
+            { "nome": "Oktopus vom Grill mit Kartoffelcreme", "prezzo": 18.00, "allergeni": ["Weichtiere"], "img": "" },
+            { "nome": "Gemischt gratiniert", "prezzo": 22.00, "allergeni": ["Fisch", "Krebstiere", "Weichtiere", "Gluten", "Milchprodukte"], "img": "" },
+            { "nome": "Schwertfisch-Carpaccio", "prezzo": 14.00, "allergeni": ["Fisch"], "img": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "categoria": "Erste Gänge",
+      "path": "primi",
+      "tipologie": [
+        {
+          "nome": "Erste Gänge mit Fisch",
+          "piatti": [
+            { "nome": "Spaghetti mit Venusmuscheln und Bottarga", "prezzo": 13.00, "allergeni": ["Gluten", "Fisch", "Weichtiere"], "img": "" },
+            { "nome": "Scialatelli mit Meeresfrüchten", "prezzo": 13.00, "allergeni": ["Gluten", "Fisch", "Krebstiere", "Weichtiere"], "img": "" },
+            { "nome": "Tortelli mit Jakobsmuscheln und Scampi", "prezzo": 13.00, "allergeni": ["Gluten", "Fisch", "Krebstiere", "Weichtiere", "Milchprodukte"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Erste Gänge vom Land",
+          "piatti": [
+            { "nome": "Die Veilchen mit Speck und Gorgonzola", "prezzo": 13.00, "allergeni": ["Gluten", "Milchprodukte"], "img": "" },
+            { "nome": "Spaghetti aus Gragnano alla Carbonara mit Guanciale", "prezzo": 11.00, "allergeni": ["Gluten", "Eier", "Milchprodukte"], "img": "" },
+            { "nome": "Spaghetti alla Mediterranea", "prezzo": 10.00, "allergeni": ["Gluten"], "img": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "categoria": "Hauptgänge",
+      "path": "secondi",
+      "tipologie": [
+        {
+          "nome": "Hauptgänge vom Meer",
+          "piatti": [
+            { "nome": "Frittierte einheimische Tintenfische, Garnelen und Sardellen", "prezzo": 18.00, "allergeni": ["Gluten", "Fisch", "Krebstiere", "Weichtiere"], "img": "" },
+            { "nome": "Schwertfisch vom Grill", "prezzo": 18.00, "allergeni": ["Fisch"], "img": "" },
+            { "nome": "Gemischte Fischgrillplatte (Garnelen, Scampi, Wolfsbarsch)", "prezzo": 30.00, "allergeni": ["Fisch", "Krebstiere", "Weichtiere"], "img": "" },
+            { "nome": "Gebratene Tintenfische mit Erbsencreme", "prezzo": 18.00, "allergeni": ["Weichtiere"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Hauptgänge vom Land",
+          "piatti": [
+            { "nome": "Irisches Angus-Rippensteak Auswahl Prime Quinn 550g", "prezzo": 23.00, "img": "" },
+            { "nome": "Schnitzel Mailänder Art mit Pommes", "prezzo": 16.00, "allergeni": ["Gluten", "Eier"], "img": "" },
+            { "nome": "Tagliata mit Rucola und Grana", "prezzo": 23.00, "allergeni": ["Milchprodukte"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Beilagen",
+          "piatti": [
+            { "nome": "Gegrilltes Gemüse", "prezzo": 6.00, "img": "" },
+            { "nome": "Salat", "prezzo": 5.00, "img": "" },
+            { "nome": "Pommes frites", "prezzo": 6.00, "img": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "categoria": "Pizzen",
+      "path": "pizze",
+      "tipologie": [
+        {
+          "nome": "Klassische Pizzen",
+          "piatti": [ 
+              { "nome": "Marinara", "prezzo": 7.00, "descrizione": "Natives Olivenöl extra, San Marzano Tomaten (Solania), Knoblauch, Oregano, Basilikum.", "allergeni": [], "img": "" },
+              { "nome": "Capricciosa", "prezzo": 8.50, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Artischocken, Champignons, gekochter Schinken, Oliven, Salami.", "allergeni": ["Milchprodukte", "Eier"], "img": "" },
+              { "nome": "4 Jahreszeiten", "prezzo": 8.50, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Artischocken, Champignons, gekochter Schinken, Oliven extra.", "allergeni": ["Milchprodukte", "Pilze"], "img": "" },
+              { "nome": "Napoletana", "prezzo": 8.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Sardellen, Oregano.", "allergeni": ["Fisch", "Milchprodukte"], "img": "" },
+              { "nome": "Thunfisch-Pizza", "prezzo": 8.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Thunfisch.", "allergeni": ["Fisch"], "img": "" },
+              { "nome": "Pluto", "prezzo": 8.50, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Würstchen, Pommes frites.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" },
+              { "nome": "Mare Monti", "prezzo": 9.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Garnelen, Steinpilze.", "allergeni": ["Fisch", "Pilze", "Milchprodukte"], "img": "" },
+              { "nome": "Marianello", "prezzo": 8.50, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), scharfe Salami, Oliven, Sardellen.", "allergeni": ["Fisch", "Milchprodukte"], "img": "" },
+              { "nome": "Reginella", "prezzo": 10.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Kirschtomaten, Büffelmozzarella, nach dem Backen Rucola, roher Schinken, Caciocavallo.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" },
+              { "nome": "Tintenfisch", "prezzo": 13.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), frittierte Tintenfische.", "allergeni": ["Fisch", "Gluten", "Milchprodukte"], "img": "" },
+              { "nome": "Zozza", "prezzo": 9.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Paprika, Zwiebeln, Salami, Gorgonzola.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Weiße Pizzen",
+          "piatti": [ 
+              { "nome": "Tiroler", "prezzo": 10.00, "descrizione": "Sahne, Fiordilatte (Sapori e Delizie), Steinpilze, Speck.", "allergeni": ["Milchprodukte", "Pilze"], "img": "" },
+              { "nome": "Friarielli und Wurst", "prezzo": 9.00, "descrizione": "Fiordilatte (Sapori e Delizie), Friarielli, Wurst.", "allergeni": ["Milchprodukte"], "img": "" },
+              { "nome": "Mortadella", "prezzo": 14.00, "descrizione": "Weiße Basis, Pistazien-Pesto, Mortadella, Büffel-Burrata, Basilikum, natives Olivenöl extra.", "allergeni": ["Milchprodukte", "Nüsse"], "img": "" },
+              { "nome": "Stracchinella", "prezzo": 8.50, "descrizione": "Fiordilatte (Sapori e Delizie), Stracchinella, Rucola nach dem Backen.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" },
+              { "nome": "Bäuerlich", "prezzo": 8.50, "descrizione": "Fiordilatte (Sapori e Delizie), Auberginen und Scheiben, Gorgonzola.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Calzoni",
+          "piatti": [
+            { "nome": "Klassischer Calzone", "prezzo": 8.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), gekochter Schinken.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" },
+            { "nome": "Calzone alla Parmigiana", "prezzo": 9.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Auberginen, gekochter Schinken, Parmesan.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" },
+            { "nome": "Recco", "prezzo": 8.00, "descrizione": "Von Hand ausgerollte Focaccia mit Stracchino-Füllung.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" },
+            { "nome": "Recco mit Käse", "prezzo": 9.00, "descrizione": "Von Hand ausgerollte Focaccia mit Stracchino- und gemischter Käsefüllung.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" }
+          ]
+        },
+        {
+          "nome": "Besondere Pizzen",
+          "piatti": [ 
+            { "nome": "Pizza-Olympiade", "prezzo": 14.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Kirschtomaten, Garnelen, Räucherlachs, Muscheln, Rucola, natives Olivenöl extra, Zitrone.", "allergeni": ["Fisch", "Krebstiere", "Milchprodukte"], "img": "" },
+            { "nome": "Pizza-Tour Europa", "prezzo": 14.00, "descrizione": "Walnüsse, Fiordilatte (Sapori e Delizie), Colonnata-Speck, Kastanienhonig, Parmesan.", "allergeni": ["Milchprodukte", "Nüsse"], "img": "" },
+            { "nome": "Stracciatozza", "prezzo": 15.00, "descrizione": "Rohe San Marzano Tomaten (Solania), Büffel-Stracciatella, Basilikum, natives Olivenöl extra.", "allergeni": ["Milchprodukte"], "img": "" },
+            { "nome": "Mortadella", "prezzo": 15.00, "descrizione": "Weiße Basis, Pistazien-Pesto, Mortadella, Büffel-Burrata, Basilikum, natives Olivenöl extra.", "allergeni": ["Milchprodukte", "Nüsse"], "img": "" },
+            { "nome": "Futuristische Marinara", "prezzo": 18.00, "descrizione": "San Marzano Tomaten (Solania), kantabrische Sardellen, fermentiertes schwarzes Olivenpulver, Kapernpulver aus Pantelleria, gelbe Kirschtomaten, Bärlauch-Pesto (Menü), Montesaro-Oregano, kristallisiertes Basilikum.", "allergeni": ["Fisch", "Milchprodukte", "Gluten"], "img": "", "dediche": "Pizza kreiert von Francesco Martucci" },
+            { "nome": "Von Süd nach Nord", "prezzo": 18.00, "descrizione": "Mozzarella, Fiordilatte (Sapori e Delizie), Tropea-Zwiebeln, geräucherter Käse, Thunfischfilet (Calippo), fermentiertes schwarzes Olivenpulver, Kapernpulver aus Pantelleria, karamellisierte Breme-Zwiebel (Slow Food), Nduja aus Spilinga, kristallisiertes Basilikum ungekocht.", "allergeni": ["Fisch", "Milchprodukte", "Gluten"], "img": "", "dediche": "Pizza kreiert vom Meister Vincenzo Fotia" },
+            { "nome": "Meine Gricia", "prezzo": 16.00, "descrizione": "Cacio e Pepe Creme (Menü), Fiordilatte (Sapori e Delizie), getrockneter Guanciale aus Amatrice, schwarzer Pfeffer nach dem Backen.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" },
+            { "nome": "Trüffel und Büffel", "prezzo": 15.00, "descrizione": "Weiße Basis, Büffelmozzarella, Trüffelcreme, Parmesanspäne, natives Olivenöl extra.", "allergeni": ["Milchprodukte"], "img": "" }
+            ]
+        },
+        {
+          "nome": "Margheritas",
+          "piatti": [ 
+            { "nome": "Klassische Margherita", "prezzo": 7.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie).", "allergeni": ["Milchprodukte", "Gluten"], "img": "../public/Pizzaimg.jpg" },
+            { "nome": "Gelbe Margherita", "prezzo": 8.00, "descrizione": "Gelbe San Marzano Datterino Tomaten (Solania), Fiordilatte (Sapori e Delizie).", "allergeni": ["Milchprodukte", "Gluten"], "img": "" },
+            { "nome": "Königin Margherita", "prezzo": 10.00, "descrizione": "San Marzano Tomaten (Solania), Kirschtomaten, Büffelmozzarella, Parmigiano Reggiano, Basilikum (alles während des Backens).", "allergeni": ["Milchprodukte", "Gluten"], "img": "" },
+            { "nome": "Essenz der Margherita", "prezzo": 12.00, "descrizione": "San Marzano Tomaten (Solania), Fiordilatte (Sapori e Delizie), Stracciatella, Basilikum in doppelter Konsistenz (frisch und frittiert), getrocknetes Parmigiano Reggiano Pulver.", "allergeni": ["Milchprodukte", "Gluten"], "img": "" }
+           ]
+        }
+      ]
+    },
+    {
+      "categoria": "Getränke",
+      "path": "bevande",
       "piatti": [
-        { "nome": "Affettati misti con formaggi e gnocco fritto", "prezzo": 14.00, "allergeni": ["Gluten", "Milchprodukte"], "img": "" },
-        { "nome": "Bufala campana con crudo", "prezzo": 13.00, "allergeni": ["Milchprodukte"], "img": "" },
-        { "nome": "Vitello tonnato con capperi di Pantelleria", "prezzo": 13.00, "allergeni": ["Eier", "Fisch"], "img": "" },
-        { "nome": "Bresaola rucola e grana", "prezzo": 13.00, "allergeni": ["Milchprodukte"], "img": "" }
+        { "nome": "Wasser in Glasflaschen Panna-S. Pellegrino", "prezzo": 2.50, "img": "" },
+        { "nome": "Dosen: Coca-Fanta-Sprite", "prezzo": 3.00, "img": "" },
+        { "nome": "Kleines helles Bier", "prezzo": 3.50, "allergeni": ["Gluten"], "img": "" },
+        { "nome": "Mittleres helles Bier", "prezzo": 5.00, "allergeni": ["Gluten"], "img": "" },
+        { "nome": "Kleines Leffe", "prezzo": 4.00, "allergeni": ["Gluten"], "img": "" },
+        { "nome": "Mittleres Leffe", "prezzo": 5.50, "allergeni": ["Gluten"], "img": "" },
+        { "nome": "Fasswein 1/2 Liter", "prezzo": 4.00, "img": "" },
+        { "nome": "Fasswein 1 Liter", "prezzo": 8.00, "img": "" },
+        { "nome": "Bittere Liköre", "prezzo": 3.00, "allergeni": ["Sulfite"], "img": "" },
+        { "nome": "Kaffee", "prezzo": 1.50, "img": "" },
+        { "nome": "Desserts", "prezzo": 6.00, "allergeni": ["Gluten", "Eier", "Milchprodukte", "Nüsse"], "img": "" }
       ]
     },
     {
-      "categoria": "Vorspeisen aus dem Meer",
+      "categoria": "Weine",
+      "path": "vini",
       "piatti": [
-        { "nome": "Antipasto misto di pesce", "prezzo": 19.00, "allergeni": ["Fisch", "Krustentiere", "Weichtiere"], "img": "" },
-        { "nome": "Polpo alla piastra con vellutata di patate", "prezzo": 18.00, "allergeni": ["Weichtiere"], "img": "" },
-        { "nome": "Misto graten", "prezzo": 22.00, "allergeni": ["Fisch", "Krustentiere", "Weichtiere", "Gluten", "Milchprodukte"], "img": "" },
-        { "nome": "Carpaccio di spada", "prezzo": 14.00, "allergeni": ["Fisch"], "img": "" }
-      ]
-    },
-    {
-      "categoria": "Nudelgerichte mit Fisch",
-      "piatti": [
-        { "nome": "Spaghetti con vongole e bottarga", "prezzo": 13.00, "allergeni": ["Gluten", "Fisch", "Weichtiere"], "img": "" },
-        { "nome": "Scialatelli ai frutti di mare", "prezzo": 13.00, "allergeni": ["Gluten", "Fisch", "Krustentiere", "Weichtiere"], "img": "" },
-        { "nome": "Tortelli capasanta e scampi", "prezzo": 13.00, "allergeni": ["Gluten", "Fisch", "Krustentiere", "Weichtiere", "Milchprodukte"], "img": "" }
-      ]
-    },
-    {
-      "categoria": "Nudelgerichte vom Land",
-      "piatti": [
-        { "nome": "Le violette con speck e zola", "prezzo": 13.00, "allergeni": ["Gluten", "Milchprodukte"], "img": "" },
-        { "nome": "Spaghetti di Gragnano alla carbonara con guanciale", "prezzo": 11.00, "allergeni": ["Gluten", "Eier", "Milchprodukte"], "img": "" },
-        { "nome": "Spaghetti alla mediterranea", "prezzo": 10.00, "allergeni": ["Gluten"], "img": "" }
-      ]
-    },
-    {
-      "categoria": "Hauptgerichte aus dem Meer",
-      "piatti": [
-        { "nome": "Frittura di calamari nostrani, gamberi e alici", "prezzo": 18.00, "allergeni": ["Gluten", "Fisch", "Krustentiere", "Weichtiere"], "img": "" },
-        { "nome": "Pesce spada alla griglia", "prezzo": 18.00, "allergeni": ["Fisch"], "img": "" },
-        { "nome": "Grigliata mista di pesce (gamberi, scampi, branzino)", "prezzo": 30.00, "allergeni": ["Fisch", "Krustentiere", "Weichtiere"], "img": "" },
-        { "nome": "Calamari arrostiti con crema di piselli", "prezzo": 18.00, "allergeni": ["Weichtiere"], "img": "" }
-      ]
-    },
-    {
-      "categoria": "Hauptgerichte vom Land",
-      "piatti": [
-        { "nome": "Costata di Angus irlandese selezione Prime Quinn gr 550", "prezzo": 23.00, "img": "" },
-        { "nome": "Cotoletta alla milanese con patatine", "prezzo": 16.00, "allergeni": ["Gluten", "Eier"], "img": "" },
-        { "nome": "Tagliata rucola e grana", "prezzo": 23.00, "allergeni": ["Milchprodukte"], "img": "" }
-      ]
-    },
-    {
-      "categoria": "Beilagen",
-      "piatti": [
-        { "nome": "Verdure grigliate", "prezzo": 6.00, "img": "" },
-        { "nome": "Insalata", "prezzo": 5.00, "img": "" },
-        { "nome": "Patatine", "prezzo": 6.00, "img": "" }
-      ]
-    },
-    {
-  "categoria": "Pizzen",
-  "piatti": [
-    { "nome": "Regina Margherita", "prezzo": 8.50, "descrizione": "Tomaten, fior di latte, Kirschtomaten, Büffelmozzarella, natives Olivenöl extra, Parmesan, Basilikum.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Calzone", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, Kochschinken.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Calzone alla parmigiana", "prezzo": 9.00, "descrizione": "Tomaten, fior di latte, Ricotta, Auberginen, Kochschinken, Parmesan.", "allergeni": ["Milchprodukte", "Eier"], "img": "" },
-    { "nome": "Contadina", "prezzo": 8.50, "descrizione": "Fior di latte, Kartoffelscheiben, Würstchen.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Tirolese", "prezzo": 10.00, "descrizione": "Sahne, fior di latte, Steinpilze, Speck.", "allergeni": ["Milchprodukte", "Pilze"], "img": "" },
-    { "nome": "Messicana", "prezzo": 9.00, "descrizione": "Tomaten, fior di latte, scharfe Salami, Pancetta, Oliven, Bohnen.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Sole", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, Ei, Pancetta, Würstchen.", "allergeni": ["Milchprodukte", "Eier"], "img": "" },
-    { "nome": "Recco", "prezzo": 8.00, "descrizione": "Handgemachte Focaccia mit Crescenza gefüllt.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Recco ai formaggi", "prezzo": 9.00, "descrizione": "Handgemachte Focaccia mit Crescenza und verschiedenen Käsesorten gefüllt.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Stracchinetta", "prezzo": 8.50, "descrizione": "Büffelmozzarella, Kirschtomaten, Rucola, roher Schinken.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Zozza", "prezzo": 9.00, "descrizione": "Tomaten, fior di latte, Paprika, Zwiebel, Salami, Gorgonzola.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Zane", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, Zwiebel, Parmesan, Petersilie, Peperoncino.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Fumi", "prezzo": 12.00, "descrizione": "Fior di latte, frische Tomaten, geräucherter Schwertfisch, Rucola, Öl.", "allergeni": ["Fisch"], "img": "" },
-    { "nome": "Bresaola", "prezzo": 10.00, "descrizione": "Bresaola, fior di latte, Rucola, Parmesanspäne, Öl.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Pizza al tonno", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, Thunfisch.", "allergeni": ["Fisch"], "img": "" },
-    { "nome": "Napoletana", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, Sardellen, Oregano.", "allergeni": ["Fisch", "Milchprodukte"], "img": "" },
-    { "nome": "5 formaggi", "prezzo": 8.50, "descrizione": "Natives Olivenöl extra, Tomaten, fior di latte, verschiedene Käsesorten.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Gorgonzola", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, Gorgonzola.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Prosciutto cotto", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, Kochschinken.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "4 stagioni", "prezzo": 8.50, "descrizione": "Tomaten, fior di latte, Artischocken, Pilze, Kochschinken, Oliven.", "allergeni": ["Milchprodukte", "Pilze"], "img": "" },
-    { "nome": "Fresca", "prezzo": 13.00, "descrizione": "San-Marzano-Tomaten, fior di latte Mozzarella, Kirschtomaten, Basilikum, Oregano, natives Olivenöl extra.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Marinara", "prezzo": 7.00, "descrizione": "Natives Olivenöl extra, Tomaten, Knoblauch, Oregano, Basilikum.", "allergeni": [], "img": "" },
-    { "nome": "Margherita", "prezzo": 7.00, "descrizione": "Tomaten, fior di latte.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Capricciosa", "prezzo": 8.50, "descrizione": "Tomaten, fior di latte, Artischocken, Pilze, Kochschinken, Oliven, Salami.", "allergeni": ["Milchprodukte", "Eier"], "img": "" },
-    { "nome": "Pizza Pazza", "prezzo": 9.00, "descrizione": "Tomaten, fior di latte, gemischtes Gemüse, scharfe Salami, Scamorza.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Ortolana", "prezzo": 8.50, "descrizione": "Tomaten, fior di latte, gegrilltes Gemüse, Kirschtomaten.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Boscaiola", "prezzo": 9.00, "descrizione": "Tomaten, fior di latte, Steinpilze.", "allergeni": ["Milchprodukte", "Pilze"], "img": "" },
-    { "nome": "Deliziosa", "prezzo": 9.00, "descrizione": "Tomaten, fior di latte, Speck, Brie.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Friarielli e salsiccia", "prezzo": 8.50, "descrizione": "Fior di latte, Stängelkohl (Friarielli), Wurst.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Cotto e zola", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, Kochschinken, Gorgonzola.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Mare verde", "prezzo": 8.50, "descrizione": "Tomaten, fior di latte, Rucola, Garnelen.", "allergeni": ["Milchprodukte", "Fisch", "Krustentiere"], "img": "" },
-    { "nome": "Pullo", "prezzo": 7.50, "descrizione": "Tomaten, fior di latte, Würstchen, Pommes frites.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Mare e monti", "prezzo": 9.50, "descrizione": "Natives Olivenöl extra, Tomaten, fior di latte, Garnelen, Steinpilze.", "allergeni": ["Milchprodukte", "Fisch", "Pilze"], "img": "" },
-    { "nome": "Marianella", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, scharfe Salami, Sardellen.", "allergeni": ["Milchprodukte", "Fisch"], "img": "" },
-    { "nome": "Reginella", "prezzo": 9.50, "descrizione": "Tomaten, fior di latte, frische Tomaten, Büffelmozzarella, Rucola, Parmesan.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Gennariello", "prezzo": 8.00, "descrizione": "Tomaten, fior di latte, scharfe Salami, Auberginen.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Calamari", "prezzo": 13.00, "descrizione": "Tomaten, fior di latte, Calamari.", "allergeni": ["Fisch", "Weichtiere"], "img": "" },
-    { "nome": "Olimpiadi della pizza", "prezzo": 14.00, "descrizione": "Tomaten, fior di latte, Kirschtomaten, Garnelen, geräucherter Lachs, Muscheln, Rucola, natives Olivenöl extra, Zitrone.", "allergeni": ["Fisch", "Krustentiere", "Milchprodukte"], "img": "" },
-    { "nome": "Giro pizza Europa", "prezzo": 13.00, "descrizione": "Walnüsse, fior di latte, Lardo di Colonnata, Kastanienhonig, Parmesan.", "allergeni": ["Milchprodukte", "Schalenfrüchte"], "img": "" },
-    { "nome": "Pizza Stracciatella", "prezzo": 14.00, "descrizione": "Frische Tomaten, Stracciatella di Bufala, Basilikum, natives Olivenöl extra.", "allergeni": ["Milchprodukte"], "img": "" },
-    { "nome": "Mortazza", "prezzo": 14.00, "descrizione": "Weiße Basis, Pistazienpesto, Mortadella, Büffel-Burrata, Basilikum, natives Olivenöl extra.", "allergeni": ["Milchprodukte", "Schalenfrüchte"], "img": "" },
-    { "nome": "Focaccia", "prezzo": 6.00, "descrizione": "Einfache Focaccia mit Öl und Salz.", "allergeni": [], "img": "" }
-      ]
-    },
-    {
-  "categoria": "Getränke",
-  "piatti": [
-    { "nome": "Wasser in Glasflasche Panna-S. Pellegrino", "prezzo": 2.50, "img": "" },
-    { "nome": "Dosen: Cola-Fanta-Sprite", "prezzo": 3.00, "img": "" },
-    { "nome": "Kleines blondes Bier", "prezzo": 3.50, "allergeni": ["Gluten"], "img": "" },
-    { "nome": "Mittleres blondes Bier", "prezzo": 5.00, "allergeni": ["Gluten"], "img": "" },
-    { "nome": "Kleine Leffe", "prezzo": 4.00, "allergeni": ["Gluten"], "img": "" },
-    { "nome": "Mittlere Leffe", "prezzo": 5.50, "allergeni": ["Gluten"], "img": "" },
-    { "nome": "Fasswein 1/2 Liter", "prezzo": 4.00, "img": "" },
-    { "nome": "Fasswein 1 Liter", "prezzo": 8.00, "img": "" },
-    { "nome": "Bitter", "prezzo": 3.00, "allergeni": ["Sulfite"], "img": "" },
-    { "nome": "Kaffee", "prezzo": 1.50, "img": "" },
-    { "nome": "Desserts", "prezzo": 6.00, "allergeni": ["Gluten", "Eier", "Milchprodukte", "Schalenfrüchte"], "img": "" }
+        { "nome": "Lambrusco Mantovano DOC", "prezzo": 12.00, "allergeni": ["Sulfite"], "img": "" },
+        { "nome": "Chianti Classico DOCG", "prezzo": 18.00, "allergeni": ["Sulfite"], "img": "" },
+        { "nome": "Montepulciano d'Abruzzo", "prezzo": 16.00, "allergeni": ["Sulfite"], "img": "" },
+        { "nome": "Vermentino di Sardegna", "prezzo": 15.00, "allergeni": ["Sulfite"], "img": "" },
+        { "nome": "Prosecco Superiore DOCG", "prezzo": 14.00, "allergeni": ["Sulfite"], "img": "" },
+        { "nome": "Barolo DOCG", "prezzo": 35.00, "allergeni": ["Sulfite"], "img": "" }
       ]
     }
   ]
 }
-
-
