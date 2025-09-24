@@ -1,7 +1,7 @@
 // src/pages/Products.jsx
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useI18n } from "../I18nProvider";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 const slugify = (str) =>
   str
@@ -15,6 +15,10 @@ export default function Products() {
   const { category } = useParams(); // es: "antipasti" | "bevande" | "vini"
   const { t } = useI18n();
   const navigate = useNavigate();
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   const categories = t("menu", { returnObjects: true }) || [];
 
